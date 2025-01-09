@@ -1,0 +1,23 @@
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #d08dff;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  color: blueviolet;
+}
+
+.navbar-toggler {
+  border: none;
+}
