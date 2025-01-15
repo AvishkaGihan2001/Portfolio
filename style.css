@@ -306,18 +306,84 @@ ul li i:hover {
   transform: translateX(0);
 }
 
-  /* Animation styles */
-  .fade-in-left {
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: all 0.6s ease-in-out;
-  }
-  .fade-in-right {
-    opacity: 0;
-    transform: translateX(50px);
-    transition: all 0.6s ease-in-out;
-  }
-  .visible {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* Animation styles */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease-in-out;
+}
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.6s ease-in-out;
+}
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.project-card {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-image {
+  transition: opacity 0.3s ease;
+  filter: brightness(70%);
+}
+
+.project-card:hover .project-image {
+  filter: brightness(100%);
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.project-item {
+  margin-bottom: 20px;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-height: 500px; /* Adjust as needed */
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
