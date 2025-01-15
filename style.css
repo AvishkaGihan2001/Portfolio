@@ -1,23 +1,282 @@
-.navbar {
-  transition: all 0.3s ease-in-out;
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.navbar-nav .nav-link {
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  transition: all 0.3s ease-in-out;
+/* Animated classes */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
-.navbar-nav .nav-link:hover {
-  background-color: #d08dff;
-  color: #fff;
+.fadeInUp {
+  animation-name: fadeInUp;
 }
 
-.navbar-brand {
+/* Custom Animation Timing for Delay */
+.animated[style*="animation-delay"] {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 50px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #ddd;
+}
+
+.timeline-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.timeline-content {
+  margin-left: 50px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 50px);
+}
+
+.timeline-item h5 {
   font-size: 1.25rem;
-  color: blueviolet;
+  font-weight: 600;
 }
 
-.navbar-toggler {
-  border: none;
+.timeline-item ul {
+  margin-top: 10px;
+}
+
+.timeline-item ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Hover effect on timeline item */
+.timeline-item:hover .timeline-content {
+  transform: translateX(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Animated Icon */
+.timeline-icon i {
+  font-size: 20px;
+  animation: bounceIn 1s ease-in-out;
+}
+
+/* Timeline Item Animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 50px;
+}
+
+.timeline-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.timeline-content {
+  padding-left: 20px;
+}
+
+.timeline-item:hover {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.timeline h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.timeline .text-muted {
+  font-size: 1rem;
+  color: #666;
+}
+
+.timeline ul {
+  margin-top: 10px;
+}
+
+.timeline ul li {
+  font-size: 1rem;
+}
+
+.timeline-item:hover .timeline-icon {
+  background-color: #007bff;
+}
+
+.fa-lg {
+  font-size: 1.5rem;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.list-unstyled li {
+  font-size: 1.1rem;
+}
+
+.list-unstyled li a {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.list-unstyled li a:hover {
+  color: #0056b3;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-6 {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    padding: 15px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover effect for links */
+a.text-decoration-none:hover {
+  text-decoration: underline;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
+
+.timeline-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+ul li i:hover {
+  color: #0d6efd; /* Primary color */
+  transition: color 0.3s ease-in-out;
 }

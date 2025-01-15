@@ -9,6 +9,24 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
     <!-- Font Awesome -->
@@ -18,32 +36,71 @@
     />
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Upgraded Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Avishka Gihan</a>
+        <a class="navbar-brand fw-bold" href="#">Avishka Gihan</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="skillsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Skills
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="skillsDropdown">
+                <li><a class="dropdown-item" href="#frontend">Frontend</a></li>
+                <li><a class="dropdown-item" href="#backend">Backend</a></li>
+                <li><a class="dropdown-item" href="#tools">Tools</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#experience">Experience</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="projectsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                <li><a class="dropdown-item" href="#web-projects">Web</a></li>
+                <li>
+                  <a class="dropdown-item" href="#ml-projects"
+                    >Machine Learning</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#others">Other Projects</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#education">Education</a>
@@ -56,269 +113,569 @@
       </div>
     </nav>
 
-    <!-- Home Section -->
+    <!-- Upgraded Home Section -->
     <section
       id="home"
       class="d-flex align-items-center text-white"
-      style="background: #4b0082; height: 100vh"
+      style="
+        background: linear-gradient(to bottom, #4b0082, #000);
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      "
     >
-      <div class="container text-center">
-        <h1 class="display-4">Avishka Gihan</h1>
-        <p class="lead">
+      <!-- Background Animation -->
+      <div class="home-background">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="container text-center position-relative">
+        <h1 class="display-3 fw-bold animated fadeInUp">Avishka Gihan</h1>
+        <p
+          class="lead animated fadeInUp"
+          style="animation-delay: 0.5s; font-size: 1.2rem"
+        >
           Full-Stack Developer | Passionate about building scalable applications
         </p>
-        <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+        <a
+          href="#about"
+          class="btn btn-outline-light btn-lg px-4 animated fadeInUp"
+          style="animation-delay: 1s"
+          >Learn More</a
+        >
+      </div>
+
+      <!-- Floating Scroll Indicator -->
+      <div
+        class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x"
+      >
+        <span class="text-white-50">Scroll Down</span>
+        <i class="bi bi-chevron-double-down text-white-50"></i>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <!-- Upgraded About Section -->
+    <section id="about" class="py-5 bg-light" style="background: #f8f9fa">
       <div class="container">
-        <h2 class="text-center">About Me</h2>
-        <p class="text-center">
+        <h2 class="text-center mb-4 text-primary">About Me</h2>
+        <p class="text-center text-muted mb-5 mx-auto" style="max-width: 600px">
           Full-stack developer with hands-on experience in building scalable
           applications using .NET and Angular. Passionate about developing
           efficient software solutions and continually enhancing my technical
           skills.
         </p>
-        <div class="row mt-4">
+        <div class="row g-4">
+          <!-- Contact Information -->
           <div class="col-md-6">
-            <h5>Contact Information</h5>
-            <ul>
-              <li><i class="fas fa-phone"></i> 0766449511</li>
-              <li><i class="fas fa-envelope"></i> xagihan13@gmail.com</li>
-              <li>
-                <i class="fas fa-map-marker-alt"></i> Archbishop 2nd Lane,
-                Tudella, Ja-Ela
-              </li>
-            </ul>
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <h5 class="text-secondary mb-4">
+                  <i class="fas fa-address-card"></i> Contact Information
+                </h5>
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <i class="fas fa-phone-alt text-success me-2"></i>
+                    <strong>Phone:</strong> 0766449511
+                  </li>
+                  <li class="mb-3">
+                    <i class="fas fa-envelope text-danger me-2"></i>
+                    <strong>Email:</strong> xagihan13@gmail.com
+                  </li>
+                  <li class="mb-3">
+                    <i class="fas fa-map-marker-alt text-info me-2"></i>
+                    <strong>Location:</strong> Archbishop 2nd Lane, Tudella,
+                    Ja-Ela, Western Province, Sri Lanka
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+
+          <!-- Links -->
           <div class="col-md-6">
-            <h5>Links</h5>
-            <ul>
-              <li>
-                <a
-                  href="http://www.linkedin.com/in/AvishkaGihan2001"
-                  target="_blank"
-                  >LinkedIn Profile</a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/AvishkaGihan2001" target="_blank"
-                  >GitHub Profile</a
-                >
-              </li>
-              <li><a href="resume.pdf" download>Download Resume</a></li>
-            </ul>
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <h5 class="text-secondary mb-4">
+                  <i class="fas fa-link"></i> Links
+                </h5>
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <a
+                      href="http://www.linkedin.com/in/AvishkaGihan2001"
+                      target="_blank"
+                      class="text-decoration-none text-primary"
+                    >
+                      <i class="fab fa-linkedin me-2"></i> LinkedIn Profile
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a
+                      href="https://github.com/AvishkaGihan2001"
+                      target="_blank"
+                      class="text-decoration-none text-dark"
+                    >
+                      <i class="fab fa-github me-2"></i> GitHub Profile
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a
+                      href="assets/Avishka Gihan Resume.pdf"
+                      download
+                      class="text-decoration-none text-info"
+                    >
+                      <i class="fas fa-file-download me-2"></i> Download Resume
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="bg-light py-5">
+    <section
+      id="skills"
+      class="py-5"
+      style="background: linear-gradient(135deg, #f8f9fa, #e9ecef)"
+    >
       <div class="container">
-        <h2 class="text-center">Skills</h2>
-        <div class="row mt-4">
-          <div class="col-md-4">
-            <h5>Front-End Development</h5>
-            <p>Angular, React, HTML, CSS, JavaScript, Tailwind</p>
+        <h2
+          class="text-center text-primary mb-5 fw-bold"
+          style="font-family: 'Poppins', sans-serif"
+        >
+          Skills
+        </h2>
+        <div class="row text-center">
+          <!-- Front-End Development -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="skill-card shadow-lg p-4 rounded bg-white h-100"
+              style="border: 1px solid #dee2e6"
+            >
+              <i class="fas fa-laptop-code text-primary fa-4x mb-3"></i>
+              <h5 class="text-secondary fw-semibold">Front-End Development</h5>
+              <hr class="w-50 mx-auto bg-primary" />
+              <div class="mt-3">
+                <div
+                  class="d-flex align-items-center justify-content-start mb-3"
+                >
+                  <i class="fab fa-angular text-danger fa-2x me-3"></i>
+                  <span class="fw-medium">Angular</span>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-start mb-3"
+                >
+                  <i class="fab fa-react text-info fa-2x me-3"></i>
+                  <span class="fw-medium">React</span>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-start mb-3"
+                >
+                  <i class="fab fa-html5 text-warning fa-2x me-3"></i>
+                  <span class="fw-medium">HTML</span>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-start mb-3"
+                >
+                  <i class="fab fa-css3-alt text-primary fa-2x me-3"></i>
+                  <span class="fw-medium">CSS</span>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-start mb-3"
+                >
+                  <i class="fab fa-js-square text-warning fa-2x me-3"></i>
+                  <span class="fw-medium">JavaScript</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-start">
+                  <i class="fab fa-tailwindcss text-teal fa-2x me-3"></i>
+                  <span class="fw-medium">Tailwind</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h5>Back-End Development</h5>
-            <p>.NET Framework, ASP.NET Core, Web API, Node.js</p>
+
+          <!-- Back-End Development -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="skill-card shadow-lg p-4 rounded bg-white h-100"
+              style="border: 1px solid #dee2e6"
+            >
+              <i class="fas fa-server text-success fa-4x mb-3"></i>
+              <h5 class="text-secondary fw-semibold">Back-End Development</h5>
+              <hr class="w-50 mx-auto bg-success" />
+              <div class="mt-3">
+                <div
+                  class="d-flex align-items-center justify-content-start mb-3"
+                >
+                  <i class="fas fa-code text-dark fa-2x me-3"></i>
+                  <span class="fw-medium">.NET Framework</span>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-start mb-3"
+                >
+                  <i class="fab fa-node-js text-success fa-2x me-3"></i>
+                  <span class="fw-medium">Node.js</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-start">
+                  <i class="fas fa-code-branch text-info fa-2x me-3"></i>
+                  <span class="fw-medium">Web API</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h5>Database Management</h5>
-            <p>MS SQL Server, MongoDB, Stored Procedures</p>
+
+          <!-- Database Management -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="skill-card shadow-lg p-4 rounded bg-white h-100"
+              style="border: 1px solid #dee2e6"
+            >
+              <i class="fas fa-database text-danger fa-4x mb-3"></i>
+              <h5 class="text-secondary fw-semibold">Database Management</h5>
+              <hr class="w-50 mx-auto bg-danger" />
+              <div class="mt-3">
+                <div
+                  class="d-flex align-items-center justify-content-start mb-3"
+                >
+                  <i class="fas fa-database text-primary fa-2x me-3"></i>
+                  <span class="fw-medium">MS SQL Server</span>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-start mb-3"
+                >
+                  <i class="fas fa-database text-success fa-2x me-3"></i>
+                  <span class="fw-medium">MongoDB</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-start">
+                  <i class="fas fa-cogs text-warning fa-2x me-3"></i>
+                  <span class="fw-medium">Stored Procedures</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-5">
+    <section
+      id="experience"
+      class="py-5"
+      style="background: linear-gradient(135deg, #ffffff, #f8f9fa)"
+    >
       <div class="container">
-        <h2 class="text-center">Experience</h2>
+        <h2
+          class="text-center mb-4 text-primary fw-bold"
+          style="font-family: 'Poppins', sans-serif"
+        >
+          Experience
+        </h2>
         <div class="timeline mt-4">
-          <div class="timeline-item mb-4">
-            <h5>Associate Software Engineer</h5>
-            <p class="text-muted">
-              Devzec Technologies – January 2024 – Present
-            </p>
-            <ul>
-              <li>
-                Worked on scalable web applications using .NET and Angular.
-              </li>
-              <li>
-                Developed robust SQL Server stored procedures and SSRS reports.
-              </li>
-              <li>
-                Managed deployment pipelines and configuration on IIS servers.
-              </li>
-            </ul>
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item d-flex align-items-start mb-5">
+            <div
+              class="timeline-icon rounded-circle bg-primary text-white d-flex align-items-center justify-content-center shadow-sm"
+              style="width: 60px; height: 60px; font-size: 1.5rem"
+            >
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div
+              class="timeline-content ms-4 p-4 rounded shadow-sm"
+              style="background-color: #ffffff; border: 1px solid #dee2e6"
+            >
+              <h5 class="fw-semibold text-secondary">
+                Associate Software Engineer
+              </h5>
+              <p class="text-muted mb-3">
+                Devzec Technologies – January 2024 – Present
+              </p>
+              <ul class="list-unstyled text-dark">
+                <li>
+                  Worked on scalable web applications using .NET and Angular.
+                </li>
+                <li>
+                  Developed robust SQL Server stored procedures and SSRS
+                  reports.
+                </li>
+                <li>
+                  Managed deployment pipelines and configuration on IIS servers.
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="timeline-item mb-4">
-            <h5>Software Developer Intern</h5>
-            <p class="text-muted">
-              Devzec Technologies – July 2023 – January 2024
-            </p>
-            <ul>
-              <li>Developed a standalone POS system using Windows Forms.</li>
-              <li>Created intuitive wireframes and user interfaces.</li>
-              <li>
-                Implemented direct printing methods for efficient invoice
-                generation.
-              </li>
-            </ul>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item d-flex align-items-start mb-5">
+            <div
+              class="timeline-icon rounded-circle bg-success text-white d-flex align-items-center justify-content-center shadow-sm"
+              style="width: 60px; height: 60px; font-size: 1.5rem"
+            >
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div
+              class="timeline-content ms-4 p-4 rounded shadow-sm"
+              style="background-color: #ffffff; border: 1px solid #dee2e6"
+            >
+              <h5 class="fw-semibold text-secondary">
+                Software Developer Intern
+              </h5>
+              <p class="text-muted mb-3">
+                Devzec Technologies – July 2023 – January 2024
+              </p>
+              <ul class="list-unstyled text-dark">
+                <li>Developed a standalone POS system using Windows Forms.</li>
+                <li>Created intuitive wireframes and user interfaces.</li>
+                <li>
+                  Implemented direct printing methods for efficient invoice
+                  generation.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="bg-light py-5">
+    <section
+      id="projects"
+      class="py-5"
+      style="background: linear-gradient(135deg, #f8f9fa, #e9ecef)"
+    >
       <div class="container">
-        <h2 class="text-center">Projects</h2>
+        <h2
+          class="text-center mb-4 text-primary fw-bold"
+          style="font-family: 'Poppins', sans-serif"
+        >
+          Projects
+        </h2>
         <div class="row mt-4">
-          <div class="col-md-4">
-            <h5>BINHUB Waste Disposal Reselling System</h5>
-            <p>Technologies: PHP, E-commerce</p>
-            <p>
-              Enhanced recycling by connecting waste sellers with businesses.
-            </p>
+          <!-- Project 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-lg rounded hover-zoom">
+              <div class="card-body p-4">
+                <h5 class="card-title text-dark fw-semibold">
+                  BINHUB Waste Disposal Reselling System
+                </h5>
+                <p class="card-text text-muted mb-2">
+                  Technologies: PHP, E-commerce
+                </p>
+                <p class="card-text">
+                  Enhanced recycling by connecting waste sellers with
+                  businesses.
+                </p>
+                <a href="#" class="btn btn-outline-primary mt-3"
+                  >View Project</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h5>Fuel-In Queue Management System</h5>
-            <p>Technologies: PHP</p>
-            <p>Developed a system to manage queues during the fuel crisis.</p>
+          <!-- Project 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-lg rounded hover-zoom">
+              <div class="card-body p-4">
+                <h5 class="card-title text-dark fw-semibold">
+                  Fuel-In Queue Management System
+                </h5>
+                <p class="card-text text-muted mb-2">Technologies: PHP</p>
+                <p class="card-text">
+                  Developed a system to manage queues during the fuel crisis.
+                </p>
+                <a href="#" class="btn btn-outline-primary mt-3"
+                  >View Project</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h5>E-COM Web System</h5>
-            <p>Technologies: ASP.Net MVC</p>
-            <p>
-              Built an e-commerce platform for selling and customizing computer
-              products.
-            </p>
+          <!-- Project 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-lg rounded hover-zoom">
+              <div class="card-body p-4">
+                <h5 class="card-title text-dark fw-semibold">
+                  E-COM Web System
+                </h5>
+                <p class="card-text text-muted mb-2">
+                  Technologies: ASP.Net MVC
+                </p>
+                <p class="card-text">
+                  Built an e-commerce platform for selling and customizing
+                  computer products.
+                </p>
+                <a href="#" class="btn btn-outline-primary mt-3"
+                  >View Project</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-5">
-      <div class="container">
-        <h2 class="text-center">Education</h2>
-        <div class="timeline mt-4">
-          <div class="timeline-item mb-4">
-            <h5>BEng (Hons) in Software Engineering</h5>
-            <p class="text-muted">
-              London Metropolitan University – 2023 – 2024
-            </p>
+<!-- Education Section -->
+<section id="education" class="py-5" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+  <div class="container">
+    <h2 class="text-center text-primary fw-bold mb-4" style="font-family: 'Poppins', sans-serif;">Education</h2>
+    <div class="timeline mt-4 position-relative">
+      <!-- Education Item 1 -->
+      <div class="timeline-item mb-5">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <div class="timeline-icon bg-primary text-white rounded-circle d-flex justify-content-center align-items-center" style="width: 50px; height: 50px;">
+              <i class="fas fa-graduation-cap fa-lg"></i>
+            </div>
           </div>
-          <div class="timeline-item mb-4">
-            <h5>Higher National Diploma in Software Engineering</h5>
-            <p class="text-muted">E-soft Metro Campus – 2021 – 2023</p>
+          <div class="col">
+            <h5 class="fw-semibold">BEng (Hons) in Software Engineering</h5>
+            <p class="text-muted mb-1">London Metropolitan University</p>
+            <p class="text-muted">2023 – 2024</p>
           </div>
-          <div class="timeline-item mb-4">
-            <h5>Advance Level (GCE A/L)</h5>
-            <p class="text-muted">S. Thomas’ College – 2017 – 2020</p>
-            <ul>
-              <li>Accounting: B</li>
-              <li>Economics: B</li>
-              <li>Business Studies: C</li>
-              <li>English: C</li>
+        </div>
+      </div>
+      <!-- Education Item 2 -->
+      <div class="timeline-item mb-5">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <div class="timeline-icon bg-success text-white rounded-circle d-flex justify-content-center align-items-center" style="width: 50px; height: 50px;">
+              <i class="fas fa-graduation-cap fa-lg"></i>
+            </div>
+          </div>
+          <div class="col">
+            <h5 class="fw-semibold">Higher National Diploma in Software Engineering</h5>
+            <p class="text-muted mb-1">E-soft Metro Campus</p>
+            <p class="text-muted">2021 – 2023</p>
+          </div>
+        </div>
+      </div>
+      <!-- Education Item 3 -->
+      <div class="timeline-item">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <div class="timeline-icon bg-warning text-white rounded-circle d-flex justify-content-center align-items-center" style="width: 50px; height: 50px;">
+              <i class="fas fa-graduation-cap fa-lg"></i>
+            </div>
+          </div>
+          <div class="col">
+            <h5 class="fw-semibold">Advanced Level (GCE A/L)</h5>
+            <p class="text-muted mb-1">S. Thomas’ College</p>
+            <p class="text-muted">2017 – 2020</p>
+            <ul class="list-unstyled mt-2">
+              <li><strong>Accounting:</strong> B</li>
+              <li><strong>Economics:</strong> B</li>
+              <li><strong>Business Studies:</strong> C</li>
+              <li><strong>English:</strong> C</li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-dark text-white py-5">
-      <div class="container">
-        <h2 class="text-center">Contact Me</h2>
-        <div class="row mt-4">
-          <!-- Contact Form -->
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  class="form-control"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  class="form-control"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea
-                  id="message"
-                  class="form-control"
-                  rows="5"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-light">Send Message</button>
-            </form>
-          </div>
 
-          <!-- Contact Information -->
-          <div class="col-md-6">
-            <h5>Get In Touch</h5>
-            <p>
-              Feel free to reach out to me for any queries or opportunities. I
-              am always open to discussing new projects, creative ideas, or
-              potential collaborations.
-            </p>
-            <ul>
-              <li><i class="fas fa-phone"></i> 0766449511</li>
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:xagihan13@gmail.com" class="text-white"
-                  >xagihan13@gmail.com</a
-                >
-              </li>
-              <li>
-                <i class="fas fa-map-marker-alt"></i> Archbishop 2nd Lane,
-                Tudella, Ja-Ela
-              </li>
-              <li>
-                <i class="fab fa-linkedin"></i>
-                <a
-                  href="http://www.linkedin.com/in/AvishkaGihan2001"
-                  target="_blank"
-                  class="text-white"
-                  >LinkedIn Profile</a
-                >
-              </li>
-              <li>
-                <i class="fab fa-github"></i>
-                <a
-                  href="https://github.com/AvishkaGihan2001"
-                  target="_blank"
-                  class="text-white"
-                  >GitHub Profile</a
-                >
-              </li>
-            </ul>
+<!-- Contact Section -->
+<section id="contact" class="bg-dark text-white py-5">
+  <div class="container">
+    <h2 class="text-center text-primary fw-bold mb-4" style="font-family: 'Poppins', sans-serif;">Contact Me</h2>
+    <div class="row mt-4">
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <form>
+          <div class="mb-4">
+            <label for="name" class="form-label fw-semibold">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control border-0 shadow-sm"
+              placeholder="Your Name"
+              required
+              style="background-color: #f8f9fa;"
+            />
           </div>
-        </div>
+          <div class="mb-4">
+            <label for="email" class="form-label fw-semibold">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control border-0 shadow-sm"
+              placeholder="Your Email"
+              required
+              style="background-color: #f8f9fa;"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="form-label fw-semibold">Message</label>
+            <textarea
+              id="message"
+              class="form-control border-0 shadow-sm"
+              rows="5"
+              placeholder="Your Message"
+              required
+              style="background-color: #f8f9fa;"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary w-100 fw-semibold shadow-sm"
+            style="font-size: 1rem;"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
-    </section>
+
+      <!-- Contact Information -->
+      <div class="col-md-6">
+        <h5 class="fw-bold mb-3" style="font-family: 'Poppins', sans-serif;">Get In Touch</h5>
+        <p class="mb-4">
+          Feel free to reach out to me for any queries or opportunities. I am always open to
+          discussing new projects, creative ideas, or potential collaborations.
+        </p>
+        <ul class="list-unstyled">
+          <li class="mb-3 d-flex align-items-center">
+            <i class="fas fa-phone fa-lg me-3"></i>
+            <span>0766449511</span>
+          </li>
+          <li class="mb-3 d-flex align-items-center">
+            <i class="fas fa-envelope fa-lg me-3"></i>
+            <a href="mailto:xagihan13@gmail.com" class="text-white text-decoration-none">
+              xagihan13@gmail.com
+            </a>
+          </li>
+          <li class="mb-3 d-flex align-items-center">
+            <i class="fas fa-map-marker-alt fa-lg me-3"></i>
+            <span>Archbishop 2nd Lane, Tudella, Ja-Ela</span>
+          </li>
+          <li class="mb-3 d-flex align-items-center">
+            <i class="fab fa-linkedin fa-lg me-3"></i>
+            <a
+              href="http://www.linkedin.com/in/AvishkaGihan2001"
+              target="_blank"
+              class="text-white text-decoration-none"
+            >
+              LinkedIn Profile
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="fab fa-github fa-lg me-3"></i>
+            <a
+              href="https://github.com/AvishkaGihan2001"
+              target="_blank"
+              class="text-white text-decoration-none"
+            >
+              GitHub Profile
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
