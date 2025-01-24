@@ -950,109 +950,167 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-dark text-white py-5">
+    <section
+      id="contact"
+      class="contact-section py-5"
+      style="
+        background: linear-gradient(135deg, #1c1c1c, #333333);
+        color: #ffffff;
+      "
+    >
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Contact Me</h2>
+        <div class="section-header text-center">
+          <h2
+            class="section-title fw-bold"
+            style="font-family: 'Poppins', sans-serif; color: #6d28d9"
+          >
+            Get in Touch
+          </h2>
+          <p class="section-subtitle" style="color: #eaeaea">
+            I’d love to hear from you! Whether it’s a project, a question, or
+            just a coffee chat, drop me a line.
+          </p>
         </div>
-        <div class="row mt-4">
+        <div class="row mt-5 g-4">
           <!-- Contact Form -->
           <div class="col-md-6">
-            <form>
-              <div class="mb-4">
-                <label for="name" class="form-label fw-semibold">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  class="form-control border-0 shadow-sm"
-                  placeholder="Your Name"
-                  required
-                  style="background-color: #f8f9fa"
-                />
+            <div
+              class="card shadow-lg border-0"
+              style="background-color: #292929; border-radius: 15px"
+            >
+              <div class="card-body">
+                <form>
+                  <div class="mb-4">
+                    <label
+                      for="name"
+                      class="form-label fw-semibold"
+                      style="color: #6d28d9"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control border-0 shadow-sm"
+                      placeholder="Your Name"
+                      required
+                      style="background-color: #3a3a3a; color: #ffffff"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label
+                      for="email"
+                      class="form-label fw-semibold"
+                      style="color: #6d28d9"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control border-0 shadow-sm"
+                      placeholder="Your Email"
+                      required
+                      style="background-color: #3a3a3a; color: #ffffff"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label
+                      for="message"
+                      class="form-label fw-semibold"
+                      style="color: #6d28d9"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      class="form-control border-0 shadow-sm"
+                      rows="5"
+                      placeholder="Your Message"
+                      required
+                      style="background-color: #3a3a3a; color: #ffffff"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn w-100 fw-bold"
+                    style="
+                      background-color: #6d28d9;
+                      color: #292929;
+                      font-size: 1rem;
+                      border-radius: 25px;
+                    "
+                  >
+                    Send Message
+                  </button>
+                </form>
               </div>
-              <div class="mb-4">
-                <label for="email" class="form-label fw-semibold">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  class="form-control border-0 shadow-sm"
-                  placeholder="Your Email"
-                  required
-                  style="background-color: #f8f9fa"
-                />
-              </div>
-              <div class="mb-4">
-                <label for="message" class="form-label fw-semibold"
-                  >Message</label
-                >
-                <textarea
-                  id="message"
-                  class="form-control border-0 shadow-sm"
-                  rows="5"
-                  placeholder="Your Message"
-                  required
-                  style="background-color: #f8f9fa"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="btn btn-primary w-100 fw-semibold shadow-sm"
-                style="font-size: 1rem"
-              >
-                Send Message
-              </button>
-            </form>
+            </div>
           </div>
 
           <!-- Contact Information -->
           <div class="col-md-6">
-            <h5 class="fw-bold mb-3" style="font-family: 'Poppins', sans-serif">
-              Get In Touch
-            </h5>
-            <p class="mb-4">
-              Feel free to reach out to me for any queries or opportunities. I
-              am always open to discussing new projects, creative ideas, or
-              potential collaborations.
-            </p>
-            <ul class="list-unstyled">
-              <li class="mb-3 d-flex align-items-center">
-                <i class="fas fa-phone fa-lg me-3"></i>
-                <span>0766449511</span>
-              </li>
-              <li class="mb-3 d-flex align-items-center">
-                <i class="fas fa-envelope fa-lg me-3"></i>
-                <a
-                  href="mailto:xagihan13@gmail.com"
-                  class="text-white text-decoration-none"
+            <div
+              class="card shadow-lg border-0"
+              style="background-color: #292929; border-radius: 15px"
+            >
+              <div class="card-body">
+                <h5
+                  class="fw-bold mb-4"
+                  style="font-family: 'Poppins', sans-serif; color: #6d28d9"
                 >
-                  xagihan13@gmail.com
-                </a>
-              </li>
-              <li class="mb-3 d-flex align-items-center">
-                <i class="fas fa-map-marker-alt fa-lg me-3"></i>
-                <span>Archbishop 2nd Lane, Tudella, Ja-Ela</span>
-              </li>
-              <li class="mb-3 d-flex align-items-center">
-                <i class="fab fa-linkedin fa-lg me-3"></i>
-                <a
-                  href="http://www.linkedin.com/in/AvishkaGihan2001"
-                  target="_blank"
-                  class="text-white text-decoration-none"
-                >
-                  LinkedIn Profile
-                </a>
-              </li>
-              <li class="d-flex align-items-center">
-                <i class="fab fa-github fa-lg me-3"></i>
-                <a
-                  href="https://github.com/AvishkaGihan2001"
-                  target="_blank"
-                  class="text-white text-decoration-none"
-                >
-                  GitHub Profile
-                </a>
-              </li>
-            </ul>
+                  Contact Information
+                </h5>
+                <ul class="list-unstyled">
+                  <li class="mb-4 d-flex align-items-center">
+                    <i
+                      class="fas fa-phone fa-lg me-3"
+                      style="color: #6d28d9"
+                    ></i>
+                    <span>0766449511</span>
+                  </li>
+                  <li class="mb-4 d-flex align-items-center">
+                    <i
+                      class="fas fa-envelope fa-lg me-3"
+                      style="color: #6d28d9"
+                    ></i>
+                    <a
+                      href="mailto:xagihan13@gmail.com"
+                      class="text-white text-decoration-none"
+                      >xagihan13@gmail.com</a
+                    >
+                  </li>
+                  <li class="mb-4 d-flex align-items-center">
+                    <i
+                      class="fas fa-map-marker-alt fa-lg me-3"
+                      style="color: #6d28d9"
+                    ></i>
+                    <span>Archbishop 2nd Lane, Tudella, Ja-Ela</span>
+                  </li>
+                  <li class="mb-4 d-flex align-items-center">
+                    <i
+                      class="fab fa-linkedin fa-lg me-3"
+                      style="color: #6d28d9"
+                    ></i>
+                    <a
+                      href="http://www.linkedin.com/in/AvishkaGihan2001"
+                      target="_blank"
+                      class="text-white text-decoration-none"
+                      >LinkedIn Profile</a
+                    >
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i
+                      class="fab fa-github fa-lg me-3"
+                      style="color: #6d28d9"
+                    ></i>
+                    <a
+                      href="https://github.com/AvishkaGihan2001"
+                      target="_blank"
+                      class="text-white text-decoration-none"
+                      >GitHub Profile</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
