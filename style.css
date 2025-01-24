@@ -342,6 +342,14 @@ section {
   max-height: 60%;
   border-radius: 50%;
 }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timeline-icon {
+    width: 60px; /* Adjust the logo size for smaller screens */
+    height: 60px;
+    margin-right: 10px; /* Reduce spacing for smaller screens */
+  }
+}
 
 .experience-item:hover .company-logo {
   transform: scale(1.1);
@@ -349,14 +357,6 @@ section {
 }
 .experience-item:hover h3 {
   color: #007bff;
-}
-
-.education-timeline {
-  display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  gap: 1rem; /* Space between cards */
-  overflow-x: auto; /* Horizontal scroll on small screens */
-  padding-bottom: 1rem;
 }
 
 .card.education-item {
@@ -409,3 +409,34 @@ section {
   font-weight: bold;
   color: #007bff;
 }
+
+.rounded-card {
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.education-timeline {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+  overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  scroll-snap-type: x mandatory; /* Smooth snapping for cards */
+  -webkit-overflow-scrolling: touch; /* Smooth scroll for iOS */
+}
+
+.education-item {
+  flex: 0 0 auto; /* Ensure the cards do not shrink */
+  width: 280px; /* Fixed width for cards to maintain consistency */
+  scroll-snap-align: start; /* Align to the start of the container */
+}
+
+@media (min-width: 768px) {
+  .education-timeline {
+    flex-wrap: wrap; /* Allow wrapping on medium and larger screens */
+    overflow-x: visible; /* Remove horizontal scroll for larger devices */
+  }
+
+  .education-item {
+    width: 30%; /* Adjust card width for larger screens */
+  }
+}
+
