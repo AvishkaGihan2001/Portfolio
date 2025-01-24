@@ -372,21 +372,23 @@
           <h2 class="section-title">Experience</h2>
           <p class="section-subtitle">My professional journey</p>
         </div>
-        <div class="experience-timeline">
+        <div
+          class="experience-timeline d-flex flex-column flex-md-row justify-content-center"
+        >
           <!-- Experience Item 1 -->
-          <div class="experience-item d-flex align-items-start mb-5">
-            <div class="timeline-icon">
-              <img
-                src="assets/Devzec.png"
-                alt="Devzec Technologies Logo"
-                class="company-logo"
-              />
-            </div>
-            <div class="timeline-content">
-              <h3>Associate Software Engineer</h3>
-              <p class="company text-muted mb-2">Devzec Technologies</p>
-              <p class="duration text-primary mb-3">January 2024 - Present</p>
-              <ul class="experience-details">
+          <div class="card experience-item shadow-sm mb-4 animate__animated">
+            <div class="card-body text-center">
+              <div class="company-logo mb-3">
+                <img
+                  src="assets/Devzec.png"
+                  alt="Devzec Technologies Logo"
+                  class="logo-img"
+                />
+              </div>
+              <h3 class="card-title">Associate Software Engineer</h3>
+              <p class="company text-muted">Devzec Technologies</p>
+              <p class="duration text-primary">January 2024 - Present</p>
+              <ul class="experience-details list-unstyled text-start mt-3">
                 <li>
                   Worked on scalable web applications using .NET and Angular
                 </li>
@@ -400,19 +402,19 @@
             </div>
           </div>
           <!-- Experience Item 2 -->
-          <div class="experience-item d-flex align-items-start mb-5">
-            <div class="timeline-icon">
-              <img
-                src="assets/Devzec.png"
-                alt="Devzec Technologies Logo"
-                class="company-logo"
-              />
-            </div>
-            <div class="timeline-content">
-              <h3>Software Developer Intern</h3>
-              <p class="company text-muted mb-2">Devzec Technologies</p>
-              <p class="duration text-primary mb-3">July 2023 - January 2024</p>
-              <ul class="experience-details">
+          <div class="card experience-item shadow-sm mb-4 animate__animated">
+            <div class="card-body text-center">
+              <div class="company-logo mb-3">
+                <img
+                  src="assets/Devzec.png"
+                  alt="Devzec Technologies Logo"
+                  class="logo-img"
+                />
+              </div>
+              <h3 class="card-title">Software Developer Intern</h3>
+              <p class="company text-muted">Devzec Technologies</p>
+              <p class="duration text-primary">July 2023 - January 2024</p>
+              <ul class="experience-details list-unstyled text-start mt-3">
                 <li>Developed a standalone POS system using Windows Forms</li>
                 <li>Created intuitive wireframes and user interfaces</li>
                 <li>
@@ -892,10 +894,10 @@
           <p class="section-subtitle">My academic achievements</p>
         </div>
         <div
-          class="education-timeline d-flex flex-nowrap flex-md-wrap justify-content-center overflow-auto"
+          class="education-timeline d-flex flex-column flex-md-row justify-content-center"
         >
           <!-- Education Item 1 -->
-          <div class="card education-item shadow-sm mx-3">
+          <div class="card education-item shadow-sm mb-4 animate__animated">
             <div class="card-body text-center">
               <div class="institution-logo mb-3">
                 <img
@@ -912,7 +914,7 @@
             </div>
           </div>
           <!-- Education Item 2 -->
-          <div class="card education-item shadow-sm mx-3">
+          <div class="card education-item shadow-sm mb-4 animate__animated">
             <div class="card-body text-center">
               <div class="institution-logo mb-3">
                 <img
@@ -929,7 +931,7 @@
             </div>
           </div>
           <!-- Education Item 3 -->
-          <div class="card education-item shadow-sm mx-3">
+          <div class="card education-item shadow-sm mb-4 animate__animated">
             <div class="card-body text-center">
               <div class="institution-logo mb-3">
                 <img
@@ -1150,6 +1152,46 @@
         );
 
         skillCards.forEach((card) => observer.observe(card));
+      });
+    </script>
+
+    <script>
+      // Add animation when education cards scroll into view
+      document.addEventListener("DOMContentLoaded", function () {
+        const items = document.querySelectorAll(".education-item");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate__fadeInUp");
+              }
+            });
+          },
+          { threshold: 0.1 } // Trigger when 10% of the element is visible
+        );
+
+        items.forEach((item) => observer.observe(item));
+      });
+    </script>
+
+    <script>
+      // Add animation for experience cards
+      document.addEventListener("DOMContentLoaded", function () {
+        const experienceItems = document.querySelectorAll(".experience-item");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate__fadeInUp");
+              }
+            });
+          },
+          { threshold: 0.1 } // Trigger when 10% of the card is visible
+        );
+
+        experienceItems.forEach((item) => observer.observe(item));
       });
     </script>
 

@@ -326,37 +326,73 @@ section {
   }
 }
 
-.timeline-icon {
-  width: 80px;
-  height: 80px;
-  background-color: #f0f0f0;
-  border-radius: 50%;
+/* General Section Styles */
+.experience {
+  background-color: #f9f9f9; /* Light background for better readability */
+  padding: 3rem 1rem;
+}
+
+.experience .section-header {
+  margin-bottom: 2rem;
+}
+
+/* Card Layout */
+.experience-timeline {
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Stack items vertically by default */
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
+  gap: 1.5rem; /* Space between cards */
 }
-.company-logo {
-  max-width: 60%;
-  max-height: 60%;
-  border-radius: 50%;
+
+.experience-item {
+  width: 100%; /* Full width for mobile */
+  max-width: 500px; /* Limit the card width */
+  opacity: 0; /* Hidden initially for animation */
+  transform: translateY(20px); /* Offset for animation */
+  transition: all 0.5s ease-in-out;
 }
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .timeline-icon {
-    width: 60px; /* Adjust the logo size for smaller screens */
-    height: 60px;
-    margin-right: 10px; /* Reduce spacing for smaller screens */
+
+@media (min-width: 768px) {
+  .experience-timeline {
+    flex-direction: row; /* Align cards horizontally on larger screens */
+    flex-wrap: wrap; /* Wrap items if needed */
+    justify-content: center;
+  }
+
+  .experience-item {
+    flex: 1 1 calc(33.33% - 1rem); /* Three items per row */
+    margin: 0.5rem; /* Space between items */
   }
 }
 
-.experience-item:hover .company-logo {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+/* Logo Styling */
+.company-logo {
+  margin-bottom: 1rem;
 }
-.experience-item:hover h3 {
-  color: #007bff;
+
+.company-logo img {
+  max-width: 80px; /* Ensure logos are responsive */
+  height: auto;
+  border-radius: 50%; /* Add a circular shape to the logo */
+  border: 2px solid #ddd; /* Subtle border for aesthetics */
+  padding: 5px;
+  background: #fff;
+}
+
+/* Card Animations */
+.experience-item.animate__fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Details List Styling */
+.experience-details {
+  padding-left: 0;
+  margin: 0;
+}
+
+.experience-details li {
+  margin-bottom: 0.5rem;
 }
 
 .card.education-item {
@@ -417,26 +453,42 @@ section {
 
 .education-timeline {
   display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping on larger screens */
-  overflow-x: auto; /* Enable horizontal scrolling on small screens */
-  scroll-snap-type: x mandatory; /* Smooth snapping for cards */
-  -webkit-overflow-scrolling: touch; /* Smooth scroll for iOS */
+  flex-direction: column; /* Stack items vertically by default */
+  align-items: center;
+  padding: 1rem 0;
 }
 
 .education-item {
-  flex: 0 0 auto; /* Ensure the cards do not shrink */
-  width: 280px; /* Fixed width for cards to maintain consistency */
-  scroll-snap-align: start; /* Align to the start of the container */
+  width: 100%; /* Full width for mobile */
+  max-width: 500px; /* Limit the width for better appearance */
+  opacity: 0; /* Initially hidden for animation */
+  transform: translateY(20px); /* Initial offset for animation */
+  transition: all 0.5s ease-in-out; /* Smooth animation */
 }
 
 @media (min-width: 768px) {
   .education-timeline {
-    flex-wrap: wrap; /* Allow wrapping on medium and larger screens */
-    overflow-x: visible; /* Remove horizontal scroll for larger devices */
+    flex-direction: row; /* Horizontal alignment on larger screens */
+    flex-wrap: wrap; /* Wrap items to the next row if needed */
+    justify-content: center; /* Center content */
   }
 
   .education-item {
-    width: 30%; /* Adjust card width for larger screens */
+    flex: 1 1 calc(33.33% - 1rem); /* Adjust for three items per row */
+    margin: 0.5rem; /* Add spacing between items */
   }
 }
 
+.education-item.animate__fadeInUp {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* No offset */
+}
+
+.education .section-header {
+  margin-bottom: 2rem;
+}
+
+.institution-logo img {
+  max-width: 100px; /* Ensure the logos are responsive */
+  height: auto;
+}
