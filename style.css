@@ -480,8 +480,8 @@ section {
 }
 
 .education-item.animate__fadeInUp {
-  opacity: 1; /* Fully visible */
-  transform: translateY(0); /* No offset */
+  opacity: 1; 
+  transform: translateY(0); 
 }
 
 .education .section-header {
@@ -507,5 +507,5 @@ section {
 }
 
 .btn:hover {
-  box-shadow: 0 4px 15px rgba(247, 202, 24, 0.6);
+  box-shadow: 0 4px 15px #a78bfa;
 }
