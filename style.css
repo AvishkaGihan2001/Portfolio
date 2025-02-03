@@ -513,3 +513,42 @@ section {
 .navbar {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  h2 {
+    font-size: 1.75rem !important;
+  }
+  h3 {
+    font-size: 1.5rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+  .lead {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .mb-4 {
+    margin-bottom: 1rem !important;
+  }
+}
