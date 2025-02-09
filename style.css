@@ -104,9 +104,8 @@ body {
 
 /* For mobile phones */
 @media (max-width: 480px) {
-  .navbar {
+  body {
     width: 80%;
-    padding: 0.5rem 0;
   }
   .navbar-brand {
     font-size: 1.2rem;
