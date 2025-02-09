@@ -351,19 +351,6 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-@media (min-width: 768px) {
-  .experience-timeline {
-    flex-direction: row; /* Align cards horizontally on larger screens */
-    flex-wrap: wrap; /* Wrap items if needed */
-    justify-content: center;
-  }
-
-  .experience-item {
-    flex: 1 1 calc(33.33% - 1rem); /* Three items per row */
-    margin: 0.5rem; /* Space between items */
-  }
-}
-
 /* Logo Styling */
 .company-logo {
   margin-bottom: 1rem;
@@ -465,19 +452,6 @@ body {
   transition: all 0.5s ease-in-out; /* Smooth animation */
 }
 
-@media (min-width: 768px) {
-  .education-timeline {
-    flex-direction: row; /* Horizontal alignment on larger screens */
-    flex-wrap: wrap; /* Wrap items to the next row if needed */
-    justify-content: center; /* Center content */
-  }
-
-  .education-item {
-    flex: 1 1 calc(33.33% - 1rem); /* Adjust for three items per row */
-    margin: 0.5rem; /* Add spacing between items */
-  }
-}
-
 .education-item.animate__fadeInUp {
   opacity: 1;
   transform: translateY(0);
@@ -507,43 +481,4 @@ body {
 
 .btn:hover {
   box-shadow: 0 4px 15px #a78bfa;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem !important;
-  }
-  h2 {
-    font-size: 1.75rem !important;
-  }
-  h3 {
-    font-size: 1.5rem !important;
-  }
-  p {
-    font-size: 1rem !important;
-  }
-  .lead {
-    font-size: 1.1rem !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .col-md-4 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .py-5 {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-  }
-  .mb-4 {
-    margin-bottom: 1rem !important;
-  }
 }
