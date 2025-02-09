@@ -76,6 +76,7 @@ body {
 }
 
 .navbar {
+  width: 100%;
   background: linear-gradient(45deg, #4b0082, #000, #6d28d9);
   background-size: 200% 200%;
   animation: navbarAnimation 5s infinite alternate,
@@ -84,6 +85,38 @@ body {
   border-bottom: 2px solid #8b5cf6;
   padding: 1rem 0;
   transition: background 0.3s;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .hero {
+    height: 60vh;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .navbar {
+    width: 80%;
+    padding: 0.5rem 0;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+  .hero {
+    height: 50vh;
+  }
 }
 
 @keyframes neonGlow {
