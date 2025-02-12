@@ -418,6 +418,7 @@ body {
   background-color: #ffffff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
 }
 
 .card.education-item:hover {
@@ -511,3 +512,4 @@ body {
 .btn:hover {
   box-shadow: 0 4px 15px #a78bfa;
 }
+
