@@ -87,6 +87,16 @@ body {
   transition: background 0.3s;
 }
 
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+.content {
+  margin-left: 220px; /* Adjust according to sidebar width */
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
@@ -512,4 +522,3 @@ body {
 .btn:hover {
   box-shadow: 0 4px 15px #a78bfa;
 }
-
