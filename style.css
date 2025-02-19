@@ -129,19 +129,37 @@ body {
   .navbar.fixed-bottom {
     padding: 8px 0;
   }
-  .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .navbar a {
-    flex: 1;
-    text-align: center;
-    font-size: 0.85rem;
-  }
-  .navbar a i {
-    font-size: 18px; /* Adjusted icon size */
-  }
+.nav-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+.nav-scroll {
+  display: flex;
+  width: max-content;
+  padding: 10px;
+  gap: 15px;
+}
+
+.nav-item {
+  flex: 1 0 auto;
+  width: 25%;
+  text-align: center;
+  scroll-snap-align: center;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.nav-item i {
+  font-size: 20px;
+  display: block;
+}
+
+.nav-item.active {
+  color: white;
+}
 }
 
 
