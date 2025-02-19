@@ -58,7 +58,8 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <!-- Normal Navbar for Large Screens -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg d-none d-lg-block">
       <div class="container">
         <a href="#" class="navbar-brand">Avishka Gihan</a>
         <button
@@ -73,18 +74,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav
-            ms-auto
-            text-center
-            text-md-start
-            fw-bold
-            gap-3
-            mb-0
-            mt-3
-          ">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
+          <ul
+            class="navbar-nav ms-auto text-center text-md-start fw-bold gap-3 mb-0 mt-3"
+          >
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
             </li>
@@ -105,8 +98,69 @@
             </li>
           </ul>
         </div>
-        
+      </div>
+    </nav>
 
+    <!-- Bottom Navigation Bar (Mobile Only) -->
+    <nav class="navbar navbar-dark bg-dark fixed-bottom d-lg-none">
+      <div class="container d-flex justify-content-around py-2">
+        <a
+          href="#home"
+          class="nav-link text-center text-secondary"
+          id="nav-home"
+        >
+          <i class="fas fa-home fa-lg"></i>
+          <div class="small">Home</div>
+        </a>
+        <a
+          href="#about"
+          class="nav-link text-center text-secondary"
+          id="nav-about"
+        >
+          <i class="fas fa-user fa-lg"></i>
+          <div class="small">About</div>
+        </a>
+        <a
+          href="#skills"
+          class="nav-link text-center text-secondary"
+          id="nav-skills"
+        >
+          <i class="fas fa-cogs fa-lg"></i>
+          <div class="small">Skills</div>
+        </a>
+        <a
+          href="#experience"
+          class="nav-link text-center text-secondary"
+          id="nav-experience"
+        >
+          <i class="fas fa-briefcase fa-lg"></i>
+          <div class="small">Experience</div>
+        </a>
+        <a
+          href="#projects"
+          class="nav-link text-center text-secondary"
+          id="nav-projects"
+        >
+          <i class="fas fa-project-diagram fa-lg"></i>
+          <div class="small">Projects</div>
+        </a>
+        <a
+          href="#education"
+          class="nav-link text-center text-secondary"
+          id="nav-education"
+        >
+          <i class="fas fa-graduation-cap fa-lg"></i>
+          <div class="small">Education</div>
+        </a>
+        <a
+          href="#contact"
+          class="nav-link text-center text-secondary"
+          id="nav-contact"
+        >
+          <i class="fas fa-envelope fa-lg"></i>
+          <div class="small">Contact</div>
+        </a>
+      </div>
     </nav>
 
     <!-- Upgraded Home Section with Particle Animation -->
@@ -1552,6 +1606,39 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-10G2JTSGEE"
     ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section"); // Select all sections
+        const navLinks = document.querySelectorAll(".navbar a");
+
+        function changeActiveLink() {
+          let scrollPosition = window.scrollY + window.innerHeight / 3;
+
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute("id");
+            const navLink = document.querySelector(`#nav-${sectionId}`);
+
+            if (
+              scrollPosition >= sectionTop &&
+              scrollPosition < sectionTop + sectionHeight
+            ) {
+              navLinks.forEach((link) => link.classList.remove("text-white"));
+              navLinks.forEach((link) => link.classList.add("text-secondary"));
+              if (navLink) {
+                navLink.classList.remove("text-secondary");
+                navLink.classList.add("text-white");
+              }
+            }
+          });
+        }
+
+        window.addEventListener("scroll", changeActiveLink);
+        changeActiveLink(); // Run once on page load
+      });
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {

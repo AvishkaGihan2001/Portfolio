@@ -87,14 +87,14 @@ body {
   transition: background 0.3s;
 }
 
-.sidebar {
-  width: 220px;
-  height: 100vh;
-  left: 0;
-  top: 0;
+.navbar-brand {
+  font-size: 2rem;
+  color: var(--light);
+  transition: color 0.3s;
 }
-.content {
-  margin-left: 220px; /* Adjust according to sidebar width */
+
+.navbar-brand:hover {
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {
