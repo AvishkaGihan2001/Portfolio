@@ -88,9 +88,9 @@ body {
 }
 
 .navbar-brand {
-  font-size: 2rem;
-  color: var(--light);
+  font-size: 1.5rem;
   transition: color 0.3s;
+  font-weight: 800;
 }
 
 .navbar-brand:hover {
@@ -99,16 +99,19 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 1rem;
+    padding: 0 0.5rem; /* Reduced padding */
   }
   .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.4rem; /* Slightly adjusted */
   }
   .navbar-nav {
     flex-direction: column;
   }
   .hero {
-    height: 60vh;
+    min-height: 65vh; /* Adjusted to avoid content cutting */
+  }
+  .navbar {
+    padding: 0.5rem 0; /* Reduce navbar padding */
   }
 }
 
@@ -118,12 +121,29 @@ body {
     font-size: 1.2rem;
   }
   .nav-link {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Slightly smaller */
   }
   .hero {
-    height: 50vh;
+    min-height: 55vh; /* Better responsiveness */
+  }
+  .navbar.fixed-bottom {
+    padding: 8px 0;
+  }
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar a {
+    flex: 1;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  .navbar a i {
+    font-size: 18px; /* Adjusted icon size */
   }
 }
+
 
 @keyframes neonGlow {
   0% {
