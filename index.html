@@ -99,6 +99,16 @@
             <li class="nav-item">
               <a href="#contact" class="nav-link">Contact</a>
             </li>
+            <li class="nav-item d-flex align-items-center justify-content-center mt-2 mt-lg-0">
+              <button
+                id="theme-toggle"
+                class="btn btn-sm btn-outline-light d-flex align-items-center gap-2 px-3"
+                type="button"
+              >
+                <i id="theme-toggle-icon" class="fas fa-moon me-1"></i>
+                <span id="theme-toggle-text">Dark</span>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -1412,6 +1422,38 @@
     </script>
 
     <script>
+      // Modern scroll reveal for projects and contact cards
+      document.addEventListener("DOMContentLoaded", function () {
+        const projectItems = document.querySelectorAll(".project-item");
+        const contactCards = document.querySelectorAll(
+          ".contact-section .card"
+        );
+
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+
+              if (entry.target.classList.contains("project-item")) {
+                entry.target.classList.add("visible");
+              }
+
+              if (entry.target.closest(".contact-section")) {
+                entry.target.classList.add("in-view");
+              }
+
+              obs.unobserve(entry.target);
+            });
+          },
+          { threshold: 0.15 }
+        );
+
+        projectItems.forEach((item) => observer.observe(item));
+        contactCards.forEach((card) => observer.observe(card));
+      });
+    </script>
+
+    <script>
       AOS.init();
     </script>
 
@@ -1424,6 +1466,55 @@
           });
         });
       });
+    </script>
+
+    <script>
+      // Light / Dark mode toggle with persistence
+      (function () {
+        const root = document.documentElement;
+        const toggleBtn = document.getElementById("theme-toggle");
+        const icon = document.getElementById("theme-toggle-icon");
+        const text = document.getElementById("theme-toggle-text");
+
+        function applyTheme(theme) {
+          root.setAttribute("data-theme", theme);
+          try {
+            localStorage.setItem("theme", theme);
+          } catch (e) {}
+
+          if (theme === "dark") {
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+            text.textContent = "Light";
+          } else {
+            icon.classList.remove("fa-sun");
+            icon.classList.add("fa-moon");
+            text.textContent = "Dark";
+          }
+        }
+
+        const storedTheme = (function () {
+          try {
+            return localStorage.getItem("theme");
+          } catch (e) {
+            return null;
+          }
+        })();
+
+        const prefersDark =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+        const initialTheme = storedTheme || (prefersDark ? "dark" : "light");
+        applyTheme(initialTheme);
+
+        if (toggleBtn) {
+          toggleBtn.addEventListener("click", function () {
+            const current = root.getAttribute("data-theme") === "dark";
+            applyTheme(current ? "light" : "dark");
+          });
+        }
+      })();
     </script>
 
     <!-- Include Particles.js Script -->
