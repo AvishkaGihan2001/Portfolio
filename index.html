@@ -146,6 +146,14 @@
             ><i class="fas fa-envelope"></i>
             <div>Contact</div></a
           >
+          <button
+            id="theme-toggle-mobile"
+            class="nav-item theme-toggle-mobile-btn border-0 bg-transparent"
+            type="button"
+          >
+            <i id="theme-toggle-mobile-icon" class="fas fa-moon"></i>
+            <div>Theme</div>
+          </button>
         </div>
       </div>
     </nav>
@@ -1475,6 +1483,10 @@
         const toggleBtn = document.getElementById("theme-toggle");
         const icon = document.getElementById("theme-toggle-icon");
         const text = document.getElementById("theme-toggle-text");
+        const mobileToggleBtn = document.getElementById("theme-toggle-mobile");
+        const mobileIcon = document.getElementById(
+          "theme-toggle-mobile-icon"
+        );
 
         function applyTheme(theme) {
           root.setAttribute("data-theme", theme);
@@ -1486,10 +1498,18 @@
             icon.classList.remove("fa-moon");
             icon.classList.add("fa-sun");
             text.textContent = "Light";
+            if (mobileIcon) {
+              mobileIcon.classList.remove("fa-moon");
+              mobileIcon.classList.add("fa-sun");
+            }
           } else {
             icon.classList.remove("fa-sun");
             icon.classList.add("fa-moon");
             text.textContent = "Dark";
+            if (mobileIcon) {
+              mobileIcon.classList.remove("fa-sun");
+              mobileIcon.classList.add("fa-moon");
+            }
           }
         }
 
@@ -1510,6 +1530,13 @@
 
         if (toggleBtn) {
           toggleBtn.addEventListener("click", function () {
+            const current = root.getAttribute("data-theme") === "dark";
+            applyTheme(current ? "light" : "dark");
+          });
+        }
+
+        if (mobileToggleBtn) {
+          mobileToggleBtn.addEventListener("click", function () {
             const current = root.getAttribute("data-theme") === "dark";
             applyTheme(current ? "light" : "dark");
           });

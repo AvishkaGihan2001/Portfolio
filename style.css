@@ -165,7 +165,9 @@ body {
     min-height: 55vh; /* Better responsiveness */
   }
   .navbar.fixed-bottom {
-    padding: 8px 0;
+    padding: 10px 0;
+    backdrop-filter: blur(18px);
+    background-color: rgba(0, 0, 0, 0.9) !important;
   }
   .nav-container {
     width: 100%;
@@ -177,26 +179,85 @@ body {
   .nav-scroll {
     display: flex;
     width: max-content;
-    padding: 10px;
-    gap: 10px;
+    padding: 8px 12px;
+    gap: 12px;
   }
 
   .nav-item {
     flex: 1 0 auto;
-    width: 25%;
+    width: 26%;
     text-align: center;
     scroll-snap-align: center;
     color: #ccc;
     text-decoration: none;
+    font-size: 0.75rem;
   }
 
   .nav-item i {
-    font-size: 20px;
+    font-size: 22px;
     display: block;
   }
 
   .nav-item.active {
     color: white;
+  }
+
+  .theme-toggle-mobile-btn {
+    border-radius: 999px;
+    padding: 6px 4px;
+    color: #e5e7eb;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .profile-card,
+  .skill-card,
+  .experience-item,
+  .education-item,
+  .project-item,
+  .contact-section .card {
+    margin: 1rem 0;
+    padding: 1.25rem;
+  }
+
+  .profile-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .contact-section .form-control {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .experience,
+  #about,
+  #skills,
+  #projects,
+  #education,
+  .contact-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -536,6 +597,11 @@ body {
 [data-theme="dark"] .experience-item h3,
 [data-theme="dark"] .card.education-item h3 {
   color: #e5e7eb;
+}
+
+/* Ensure About section email link is readable in dark mode */
+[data-theme="dark"] #about a[href^="mailto"] {
+  color: #e5e7eb !important;
 }
 
 .experience .section-header {
