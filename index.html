@@ -1,1732 +1,1245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Avishka Gihan | Full-Stack Developer Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avishka Gihan | Full-Stack Developer Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-    <!-- Font Awesome CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
 
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      rel="stylesheet"
-    />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-  </head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 
-  <body>
-    <!-- Normal Navbar for Large Screens -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg d-none d-lg-block">
-      <div class="container">
-        <a href="#" class="navbar-brand">Avishka Gihan</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Futuristic Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Normal Navbar for Large Screens -->
+  <nav class="navbar navbar-expand-lg d-none d-lg-block">
+    <div class="container">
+      <a href="#" class="navbar-brand">Avishka Gihan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center text-md-start fw-bold gap-3 mb-0 mt-3">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item d-flex align-items-center justify-content-center mt-2 mt-lg-0">
+            <button id="theme-toggle" class="btn btn-sm btn-outline-light d-flex align-items-center gap-2 px-3"
+              type="button">
+              <i id="theme-toggle-icon" class="fas fa-moon me-1"></i>
+              <span id="theme-toggle-text">Dark</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bottom Navigation Bar (Swipable) -->
+  <nav class="navbar navbar-dark bg-dark fixed-bottom d-lg-none">
+    <div class="nav-container">
+      <div class="nav-scroll">
+        <a href="#home" class="nav-item active"><i class="fas fa-home"></i>
+          <div>Home</div>
+        </a>
+        <a href="#about" class="nav-item"><i class="fas fa-user"></i>
+          <div>About</div>
+        </a>
+        <a href="#skills" class="nav-item"><i class="fas fa-cogs"></i>
+          <div>Skills</div>
+        </a>
+        <a href="#experience" class="nav-item"><i class="fas fa-briefcase"></i>
+          <div>Experience</div>
+        </a>
+        <a href="#projects" class="nav-item"><i class="fas fa-project-diagram"></i>
+          <div>Projects</div>
+        </a>
+        <a href="#education" class="nav-item"><i class="fas fa-graduation-cap"></i>
+          <div>Education</div>
+        </a>
+        <a href="#contact" class="nav-item"><i class="fas fa-envelope"></i>
+          <div>Contact</div>
+        </a>
+        <button id="theme-toggle-mobile" class="nav-item theme-toggle-mobile-btn border-0 bg-transparent" type="button">
+          <i id="theme-toggle-mobile-icon" class="fas fa-moon"></i>
+          <div>Theme</div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul
-            class="navbar-nav ms-auto text-center text-md-start fw-bold gap-3 mb-0 mt-3"
-          >
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Upgraded Home Section with Particle Animation -->
+  <section id="home" class="d-flex align-items-center text-white position-relative overflow-hidden">
+    <!-- Particle Animation -->
+    <div id="particles-js" class="position-absolute w-100 h-100"></div>
+
+    <!-- Content -->
+    <div class="container text-center position-relative z-index-1">
+      <h1 class="display-3 fw-bold animated fadeInUp">Avishka Gihan</h1>
+      <p class="lead animated fadeInUp" style="animation-delay: 0.5s; font-size: 1.2rem">
+        Full-Stack Developer | Passionate about building scalable applications
+      </p>
+      <a href="#about" class="btn btn-outline-light btn-lg px-4 animated fadeInUp" style="animation-delay: 1s">Learn
+        More</a>
+    </div>
+
+    <!-- Floating Scroll Indicator -->
+    <div class="scroll-indicator">
+      <span class="text-white-50">Scroll Down</span>
+      <i class="bi bi-chevron-double-down"></i>
+    </div>
+  </section>
+
+  <!-- Enhanced About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2 class="section-title mb-3">About Me</h2>
+        <p class="section-subtitle text-muted">Get to know me better</p>
+      </div>
+      <div class="profile-card mx-auto text-center shadow-lg p-5 bg-white rounded-5 position-relative"
+        data-aos="zoom-in" data-aos-delay="200">
+        <!-- Profile Picture -->
+        <img src="assets/CV_PIC.png" alt="Avishka Gihan"
+          class="profile-image rounded-circle border border-3 border-primary mb-4" style="object-fit: cover"
+          data-aos="fade-down" />
+
+        <!-- Name and Title -->
+        <h3 class="fw-bold mb-1">Avishka Gihan</h3>
+        <p class="mb-4" style="font-size: 1.2rem">
+          Full-Stack Developer
+        </p>
+
+        <!-- Social Links -->
+        <div class="social-links d-flex justify-content-center gap-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="http://www.linkedin.com/in/AvishkaGihan2001" target="_blank"
+            class="social-link text-decoration-none">
+            <i class="fab fa-linkedin text-primary" style="font-size: 2rem"></i>
+          </a>
+          <a href="https://github.com/AvishkaGihan2001" target="_blank">
+            <i class="fab fa-github text-dark" style="font-size: 2rem"></i>
+          </a>
+        </div>
+
+        <!-- Resume Download -->
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="400">
+          <a href="assets/Avishka_Resume.pdf" download class="btn btn-primary btn-lg text-white fw-semibold shadow">
+            <i class="fas fa-file-download me-2"></i> Download Resume
+          </a>
+        </div>
+
+        <!-- About Text -->
+        <p class="mt-4" style="font-size: 1.1rem; line-height: 1.8; text-align: justify" data-aos="fade-up"
+          data-aos-delay="400">
+          I’m a passionate full-stack developer with expertise in building
+          scalable, dynamic applications using
+          <span class="text-primary fw-bold">.NET</span> and
+          <span class="text-primary fw-bold">Angular</span>. I thrive on
+          solving challenging problems, creating efficient solutions, and
+          embracing continuous learning.
+        </p>
+
+        <!-- Contact Information -->
+        <div class="contact-info text-start mt-5" data-aos="fade-up" data-aos-delay="600">
+          <h5 class="text-secondary mb-4">
+            <i class="fas fa-address-card text-primary"></i> Contact
+            Information
+          </h5>
+          <ul class="list-unstyled">
+            <li class="mb-3 d-flex align-items-center">
+              <i class="fas fa-phone-alt text-success me-3"></i>
+              <strong>Phone:</strong>
+              <span class="ms-2">0766449511</span>
             </li>
-            <li class="nav-item">
-              <a href="#skills" class="nav-link">Skills</a>
+            <li class="mb-3 d-flex align-items-center">
+              <i class="fas fa-envelope text-danger me-3"></i>
+              <strong>Email:</strong>
+              <a href="mailto:xagihan13@gmail.com" class="ms-2 text-decoration-none">xagihan13@gmail.com</a>
             </li>
-            <li class="nav-item">
-              <a href="#experience" class="nav-link">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#education" class="nav-link">Education</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item d-flex align-items-center justify-content-center mt-2 mt-lg-0">
-              <button
-                id="theme-toggle"
-                class="btn btn-sm btn-outline-light d-flex align-items-center gap-2 px-3"
-                type="button"
-              >
-                <i id="theme-toggle-icon" class="fas fa-moon me-1"></i>
-                <span id="theme-toggle-text">Dark</span>
-              </button>
+            <li class="d-flex align-items-center">
+              <i class="fas fa-map-marker-alt text-info me-3"></i>
+              <strong>Location:</strong>
+              <span class="ms-2">Archbishop 2nd Lane, Tudella, Ja-Ela, Sri Lanka</span>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <!-- Bottom Navigation Bar (Swipable) -->
-    <nav class="navbar navbar-dark bg-dark fixed-bottom d-lg-none">
-      <div class="nav-container">
-        <div class="nav-scroll">
-          <a href="#home" class="nav-item active"
-            ><i class="fas fa-home"></i>
-            <div>Home</div></a
-          >
-          <a href="#about" class="nav-item"
-            ><i class="fas fa-user"></i>
-            <div>About</div></a
-          >
-          <a href="#skills" class="nav-item"
-            ><i class="fas fa-cogs"></i>
-            <div>Skills</div></a
-          >
-          <a href="#experience" class="nav-item"
-            ><i class="fas fa-briefcase"></i>
-            <div>Experience</div></a
-          >
-          <a href="#projects" class="nav-item"
-            ><i class="fas fa-project-diagram"></i>
-            <div>Projects</div></a
-          >
-          <a href="#education" class="nav-item"
-            ><i class="fas fa-graduation-cap"></i>
-            <div>Education</div></a
-          >
-          <a href="#contact" class="nav-item"
-            ><i class="fas fa-envelope"></i>
-            <div>Contact</div></a
-          >
-          <button
-            id="theme-toggle-mobile"
-            class="nav-item theme-toggle-mobile-btn border-0 bg-transparent"
-            type="button"
-          >
-            <i id="theme-toggle-mobile-icon" class="fas fa-moon"></i>
-            <div>Theme</div>
-          </button>
-        </div>
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">My technical proficiencies</p>
       </div>
-    </nav>
-
-    <!-- Upgraded Home Section with Particle Animation -->
-    <section
-      id="home"
-      class="d-flex align-items-center text-white"
-      style="
-        background: linear-gradient(to bottom, #4b0082, #000);
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
-      "
-    >
-      <!-- Particle Animation -->
-      <div id="particles-js" class="position-absolute w-100 h-100"></div>
-
-      <!-- Content -->
-      <div class="container text-center position-relative z-index-1">
-        <h1 class="display-3 fw-bold animated fadeInUp">Avishka Gihan</h1>
-        <p
-          class="lead animated fadeInUp"
-          style="animation-delay: 0.5s; font-size: 1.2rem"
-        >
-          Full-Stack Developer | Passionate about building scalable applications
-        </p>
-        <a
-          href="#about"
-          class="btn btn-outline-light btn-lg px-4 animated fadeInUp"
-          style="animation-delay: 1s"
-          >Learn More</a
-        >
-      </div>
-
-      <!-- Floating Scroll Indicator -->
-      <div class="scroll-indicator">
-        <span class="text-white-50">Scroll Down</span>
-        <i class="bi bi-chevron-double-down"></i>
-      </div>
-    </section>
-
-    <!-- Enhanced About Section -->
-    <section
-      id="about"
-      class="py-5"
-      style="background: linear-gradient(to bottom, #f8f9fa, #e9ecef)"
-    >
-      <div class="container">
-        <div class="section-header text-center" data-aos="fade-up">
-          <h2 class="section-title mb-3">About Me</h2>
-          <p class="section-subtitle text-muted">Get to know me better</p>
-        </div>
-        <div
-          class="profile-card mx-auto text-center shadow-lg p-5 bg-white rounded-5 position-relative"
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        >
-          <!-- Profile Picture -->
-          <img
-            src="assets/CV_PIC.png"
-            alt="Avishka Gihan"
-            class="profile-image rounded-circle border border-3 border-primary mb-4"
-            style="width: 150px; height: 150px; object-fit: cover"
-            data-aos="fade-down"
-          />
-
-          <!-- Name and Title -->
-          <h3 class="fw-bold mb-1">Avishka Gihan</h3>
-          <p class="text-muted mb-4" style="font-size: 1.2rem">
-            Full-Stack Developer
-          </p>
-
-          <!-- Social Links -->
-          <div
-            class="social-links d-flex justify-content-center gap-3 mb-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <a
-              href="http://www.linkedin.com/in/AvishkaGihan2001"
-              target="_blank"
-              class="social-link text-decoration-none"
-            >
-              <i
-                class="fab fa-linkedin text-primary"
-                style="font-size: 2rem"
-              ></i>
-            </a>
-            <a href="https://github.com/AvishkaGihan2001" target="_blank">
-              <i class="fab fa-github text-dark" style="font-size: 2rem"></i>
-            </a>
-          </div>
-
-          <!-- Resume Download -->
-          <div class="mb-4" data-aos="fade-up" data-aos-delay="400">
-            <a
-              href="assets/Avishka_Resume.pdf"
-              download
-              class="btn btn-primary btn-lg text-white fw-semibold shadow"
-            >
-              <i class="fas fa-file-download me-2"></i> Download Resume
-            </a>
-          </div>
-
-          <!-- About Text -->
-          <p
-            class="text-muted mt-4"
-            style="font-size: 1.1rem; line-height: 1.8; text-align: justify"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            I’m a passionate full-stack developer with expertise in building
-            scalable, dynamic applications using
-            <span class="text-primary fw-bold">.NET</span> and
-            <span class="text-primary fw-bold">Angular</span>. I thrive on
-            solving challenging problems, creating efficient solutions, and
-            embracing continuous learning.
-          </p>
-
-          <!-- Contact Information -->
-          <div
-            class="contact-info text-start mt-5"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <h5 class="text-secondary mb-4">
-              <i class="fas fa-address-card text-primary"></i> Contact
-              Information
+      <div class="row text-center">
+        <!-- Front-End Development -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="250">
+          <div class="skill-card shadow-lg p-4 rounded bg-white h-100 rounded-card" style="border: 1px solid #dee2e6"
+            data-animate="animate__zoomIn">
+            <i class="fas fa-laptop-code text-primary fa-4x mb-3"></i>
+            <h5 class="text-secondary fw-semibold" data-aos="fade-up" data-aos-delay="250">
+              Front-End Development
             </h5>
-            <ul class="list-unstyled">
-              <li class="mb-3 d-flex align-items-center">
-                <i class="fas fa-phone-alt text-success me-3"></i>
-                <strong>Phone:</strong>
-                <span class="ms-2">0766449511</span>
+            <hr class="w-50 mx-auto bg-primary" />
+            <div class="mt-3">
+              <div class="d-flex align-items-center justify-content-start mb-3" data-aos="zoom-out-up"
+                data-aos-delay="250">
+                <i class="fab fa-angular text-danger fa-2x me-3"></i>
+                <span class="fw-medium">Angular</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-start mb-3" data-aos="zoom-out-up"
+                data-aos-delay="250">
+                <i class="fab fa-react text-info fa-2x me-3"></i>
+                <span class="fw-medium">React</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-start mb-3" data-aos="zoom-out-up"
+                data-aos-delay="250">
+                <i class="fab fa-html5 text-warning fa-2x me-3"></i>
+                <span class="fw-medium">HTML</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-start mb-3" data-aos="zoom-out-up"
+                data-aos-delay="250">
+                <i class="fab fa-css3-alt text-primary fa-2x me-3"></i>
+                <span class="fw-medium">CSS</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-start mb-3" data-aos="zoom-out-up"
+                data-aos-delay="250">
+                <i class="fab fa-js-square text-warning fa-2x me-3"></i>
+                <span class="fw-medium">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back-End Development -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-card shadow-lg p-4 rounded bg-white h-100 rounded-card" style="border: 1px solid #dee2e6"
+            data-animate="animate__zoomIn">
+            <i class="fas fa-server text-success fa-4x mb-3"></i>
+            <h5 class="text-secondary fw-semibold" data-aos="fade-up" data-aos-delay="400">
+              Back-End Development
+            </h5>
+            <hr class="w-50 mx-auto bg-success" />
+            <div class="mt-3">
+              <div class="d-flex align-items-center justify-content-start mb-3" data-aos="zoom-out-up"
+                data-aos-delay="400">
+                <i class="fas fa-code text-dark fa-2x me-3"></i>
+                <span class="fw-medium">.NET Framework</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-start mb-3" data-aos="zoom-out-up"
+                data-aos-delay="400">
+                <i class="fab fa-node-js text-success fa-2x me-3"></i>
+                <span class="fw-medium">Node.js</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-start" data-aos="zoom-out-up" data-aos-delay="400">
+                <i class="fas fa-code-branch text-info fa-2x me-3"></i>
+                <span class="fw-medium">Web API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database Management -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="550">
+          <div class="skill-card shadow-lg p-4 rounded bg-white h-100 rounded-card" style="border: 1px solid #dee2e6"
+            data-animate="animate__zoomIn">
+            <i class="fas fa-database text-danger fa-4x mb-3"></i>
+            <h5 class="text-secondary fw-semibold" data-aos="fade-up" data-aos-delay="550">
+              Database Management
+            </h5>
+            <hr class="w-50 mx-auto bg-danger" />
+            <div class="mt-3">
+              <div class="d-flex align-items-center justify-content-start mb-3" data-aos="zoom-out-up"
+                data-aos-delay="550">
+                <i class="fas fa-database text-primary fa-2x me-3"></i>
+                <span class="fw-medium">MS SQL Server</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-start mb-3" data-aos="zoom-out-up"
+                data-aos-delay="550">
+                <i class="fas fa-database text-success fa-2x me-3"></i>
+                <span class="fw-medium">MongoDB</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-start" data-aos="zoom-out-up" data-aos-delay="550">
+                <i class="fas fa-cogs text-warning fa-2x me-3"></i>
+                <span class="fw-medium">Stored Procedures</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">My professional journey</p>
+      </div>
+      <div class="experience-timeline d-flex flex-column flex-md-row justify-content-center gap-3">
+        <!-- Add a new experience item for the current position -->
+        <div class="card experience-item shadow-sm" data-aos="zoom-out-right" data-aos-delay="200">
+          <div class="card-body text-center">
+            <div class="company-logo mb-3">
+              <img src="assets/ansar-gallery-logo.png" alt="Soft Gallery Logo" class="logo-img" />
+            </div>
+            <h3 class="card-title">Web Developer</h3>
+            <p class="company text-muted">Ansar Gallery</p>
+            <p class="duration text-primary">January 2026 - Present</p>
+            <ul class="experience-details list-unstyled text-start mt-3">
+              <li>
+                🔹 <strong>Developed Responsive Web Applications:</strong> Built
+                dynamic and user-friendly applications using Angular and .NET.
               </li>
-              <li class="mb-3 d-flex align-items-center">
-                <i class="fas fa-envelope text-danger me-3"></i>
-                <strong>Email:</strong>
-                <a
-                  href="mailto:xagihan13@gmail.com"
-                  class="ms-2 text-dark text-decoration-none"
-                  >xagihan13@gmail.com</a
-                >
+              <li>
+                🔹 <strong>Implemented RESTful APIs:</strong> Integrated
+                third-party services to enhance functionality and
+                interoperability.
               </li>
-              <li class="d-flex align-items-center">
-                <i class="fas fa-map-marker-alt text-info me-3"></i>
-                <strong>Location:</strong>
-                <span class="ms-2"
-                  >Archbishop 2nd Lane, Tudella, Ja-Ela, Sri Lanka</span
-                >
+              <li>
+                🔹 <strong>Optimized Database Performance:</strong> Designed
+                robust SQL Server stored procedures and SSRS reports.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Experience Item 1 -->
+        <div class="card experience-item shadow-sm" data-aos="zoom-out-right" data-aos-delay="200">
+          <div class="card-body text-center">
+            <div class="company-logo mb-3">
+              <img src="assets/softGallery.jpg" alt="Soft Gallery Logo" class="logo-img" />
+            </div>
+            <h3 class="card-title">Associate Software Engineer</h3>
+            <p class="company text-muted">Soft Gallery</p>
+            <p class="duration text-primary">February 2025 - January 2026</p>
+            <ul class="experience-details list-unstyled text-start mt-3">
+              <li>
+                🔹
+                <strong>Developed Responsive Web Applications:</strong> Built
+                dynamic and user-friendly applications using Angular and .NET.
+              </li>
+              <li>
+                🔹 <strong>Implemented RESTful APIs:</strong> Integrated
+                third-party services to enhance functionality and
+                interoperability.
+              </li>
+              <li>
+                🔹 <strong>Optimized Database Performance:</strong> Designed
+                and fine-tuned database schemas for efficient data retrieval.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="card experience-item shadow-sm" data-aos="zoom-out-center" data-aos-delay="200">
+          <div class="card-body text-center">
+            <div class="company-logo mb-3">
+              <img src="assets/Devzec.png" alt="Devzec Technologies Logo" class="logo-img" />
+            </div>
+            <h3 class="card-title">Associate Software Engineer</h3>
+            <p class="company text-muted">Devzec Technologies</p>
+            <p class="duration text-primary">January 2024 - February 2025</p>
+            <ul class="experience-details list-unstyled text-start mt-3">
+              <li>
+                🔹 <strong>Built Scalable Web Applications:</strong> Developed
+                high-performance applications using .NET and Angular.
+              </li>
+              <li>
+                🔹 <strong>Optimized Database Performance:</strong> Designed
+                robust SQL Server stored procedures and SSRS reports.
+              </li>
+              <li>
+                🔹 <strong>Streamlined Deployment:</strong> Managed IIS server
+                configurations and automated deployment pipelines.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="card experience-item shadow-sm" data-aos="zoom-out-left" data-aos-delay="300">
+          <div class="card-body text-center">
+            <div class="company-logo mb-3">
+              <img src="assets/Devzec.png" alt="Devzec Technologies Logo" class="logo-img" />
+            </div>
+            <h3 class="card-title">Software Developer Intern</h3>
+            <p class="company text-muted">Devzec Technologies</p>
+            <p class="duration text-primary">July 2023 - January 2024</p>
+            <ul class="experience-details list-unstyled text-start mt-3">
+              <li>
+                🔹 <strong>Developed a Standalone POS System:</strong> Built a
+                feature-rich POS application using Windows Forms.
+              </li>
+              <li>
+                🔹 <strong>Designed Intuitive UI/UX:</strong> Created
+                wireframe and user-friendly interfaces for a seamless
+                experience.
+              </li>
+              <li>
+                🔹 <strong>Optimized Invoice Generation:</strong> Implemented
+                direct printing methods for faster and more efficient
+                invoicing.
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section
-      id="skills"
-      class="py-5"
-      style="background: linear-gradient(135deg, #f8f9fa, #e9ecef)"
-    >
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Skills</h2>
-          <p class="section-subtitle">My technical proficiencies</p>
-        </div>
-        <div class="row text-center">
-          <!-- Front-End Development -->
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="250">
-            <div
-              class="skill-card shadow-lg p-4 rounded bg-white h-100 rounded-card"
-              style="border: 1px solid #dee2e6"
-              data-animate="animate__zoomIn"
-            >
-              <i class="fas fa-laptop-code text-primary fa-4x mb-3"></i>
-              <h5
-                class="text-secondary fw-semibold"
-                data-aos="fade-up"
-                data-aos-delay="250"
-              >
-                Front-End Development
-              </h5>
-              <hr class="w-50 mx-auto bg-primary" />
-              <div class="mt-3">
-                <div
-                  class="d-flex align-items-center justify-content-start mb-3"
-                  data-aos="zoom-out-up"
-                  data-aos-delay="250"
-                >
-                  <i class="fab fa-angular text-danger fa-2x me-3"></i>
-                  <span class="fw-medium">Angular</span>
-                </div>
-                <div
-                  class="d-flex align-items-center justify-content-start mb-3"
-                  data-aos="zoom-out-up"
-                  data-aos-delay="250"
-                >
-                  <i class="fab fa-react text-info fa-2x me-3"></i>
-                  <span class="fw-medium">React</span>
-                </div>
-                <div
-                  class="d-flex align-items-center justify-content-start mb-3"
-                  data-aos="zoom-out-up"
-                  data-aos-delay="250"
-                >
-                  <i class="fab fa-html5 text-warning fa-2x me-3"></i>
-                  <span class="fw-medium">HTML</span>
-                </div>
-                <div
-                  class="d-flex align-items-center justify-content-start mb-3"
-                  data-aos="zoom-out-up"
-                  data-aos-delay="250"
-                >
-                  <i class="fab fa-css3-alt text-primary fa-2x me-3"></i>
-                  <span class="fw-medium">CSS</span>
-                </div>
-                <div
-                  class="d-flex align-items-center justify-content-start mb-3"
-                  data-aos="zoom-out-up"
-                  data-aos-delay="250"
-                >
-                  <i class="fab fa-js-square text-warning fa-2x me-3"></i>
-                  <span class="fw-medium">JavaScript</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Back-End Development -->
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-            <div
-              class="skill-card shadow-lg p-4 rounded bg-white h-100 rounded-card"
-              style="border: 1px solid #dee2e6"
-              data-animate="animate__zoomIn"
-            >
-              <i class="fas fa-server text-success fa-4x mb-3"></i>
-              <h5
-                class="text-secondary fw-semibold"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                Back-End Development
-              </h5>
-              <hr class="w-50 mx-auto bg-success" />
-              <div class="mt-3">
-                <div
-                  class="d-flex align-items-center justify-content-start mb-3"
-                  data-aos="zoom-out-up"
-                  data-aos-delay="400"
-                >
-                  <i class="fas fa-code text-dark fa-2x me-3"></i>
-                  <span class="fw-medium">.NET Framework</span>
-                </div>
-                <div
-                  class="d-flex align-items-center justify-content-start mb-3"
-                  data-aos="zoom-out-up"
-                  data-aos-delay="400"
-                >
-                  <i class="fab fa-node-js text-success fa-2x me-3"></i>
-                  <span class="fw-medium">Node.js</span>
-                </div>
-                <div
-                  class="d-flex align-items-center justify-content-start"
-                  data-aos="zoom-out-up"
-                  data-aos-delay="400"
-                >
-                  <i class="fas fa-code-branch text-info fa-2x me-3"></i>
-                  <span class="fw-medium">Web API</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Database Management -->
-          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="550">
-            <div
-              class="skill-card shadow-lg p-4 rounded bg-white h-100 rounded-card"
-              style="border: 1px solid #dee2e6"
-              data-animate="animate__zoomIn"
-            >
-              <i class="fas fa-database text-danger fa-4x mb-3"></i>
-              <h5
-                class="text-secondary fw-semibold"
-                data-aos="fade-up"
-                data-aos-delay="550"
-              >
-                Database Management
-              </h5>
-              <hr class="w-50 mx-auto bg-danger" />
-              <div class="mt-3">
-                <div
-                  class="d-flex align-items-center justify-content-start mb-3"
-                  data-aos="zoom-out-up"
-                  data-aos-delay="550"
-                >
-                  <i class="fas fa-database text-primary fa-2x me-3"></i>
-                  <span class="fw-medium">MS SQL Server</span>
-                </div>
-                <div
-                  class="d-flex align-items-center justify-content-start mb-3"
-                  data-aos="zoom-out-up"
-                  data-aos-delay="550"
-                >
-                  <i class="fas fa-database text-success fa-2x me-3"></i>
-                  <span class="fw-medium">MongoDB</span>
-                </div>
-                <div
-                  class="d-flex align-items-center justify-content-start"
-                  data-aos="zoom-out-up"
-                  data-aos-delay="550"
-                >
-                  <i class="fas fa-cogs text-warning fa-2x me-3"></i>
-                  <span class="fw-medium">Stored Procedures</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">My recent works</p>
       </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-      <div class="container">
-        <div class="section-header text-center mb-5">
-          <h2 class="section-title">Experience</h2>
-          <p class="section-subtitle">My professional journey</p>
-        </div>
-        <div
-          class="experience-timeline d-flex flex-column flex-md-row justify-content-center"
-        >
-          <!-- Experience Item 1 -->
-          <div
-            class="card experience-item shadow-sm mb-4"
-            data-aos="zoom-out-right"
-            data-aos-delay="200"
-          >
-            <div class="card-body text-center">
-              <div class="company-logo mb-3">
-                <img
-                  src="assets/softGallery.jpg"
-                  alt="Soft Gallery Logo"
-                  class="logo-img"
-                />
-              </div>
-              <h3 class="card-title">Associate Software Engineer</h3>
-              <p class="company text-muted">Soft Gallery</p>
-              <p class="duration text-primary">February 2025 - Present</p>
-              <ul class="experience-details list-unstyled text-start mt-3">
-                <li>
-                  🔹
-                  <strong>Developed Responsive Web Applications:</strong> Built
-                  dynamic and user-friendly applications using Angular and .NET.
-                </li>
-                <li>
-                  🔹 <strong>Implemented RESTful APIs:</strong> Integrated
-                  third-party services to enhance functionality and
-                  interoperability.
-                </li>
-                <li>
-                  🔹 <strong>Optimized Database Performance:</strong> Designed
-                  and fine-tuned database schemas for efficient data retrieval.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Experience Item 2 -->
-          <div
-            class="card experience-item shadow-sm mb-4"
-            data-aos="zoom-out-center"
-            data-aos-delay="200"
-          >
-            <div class="card-body text-center">
-              <div class="company-logo mb-3">
-                <img
-                  src="assets/Devzec.png"
-                  alt="Devzec Technologies Logo"
-                  class="logo-img"
-                />
-              </div>
-              <h3 class="card-title">Associate Software Engineer</h3>
-              <p class="company text-muted">Devzec Technologies</p>
-              <p class="duration text-primary">January 2024 - February 2025</p>
-              <ul class="experience-details list-unstyled text-start mt-3">
-                <li>
-                  🔹 <strong>Built Scalable Web Applications:</strong> Developed
-                  high-performance applications using .NET and Angular.
-                </li>
-                <li>
-                  🔹 <strong>Optimized Database Performance:</strong> Designed
-                  robust SQL Server stored procedures and SSRS reports.
-                </li>
-                <li>
-                  🔹 <strong>Streamlined Deployment:</strong> Managed IIS server
-                  configurations and automated deployment pipelines.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Experience Item 3 -->
-          <div
-            class="card experience-item shadow-sm mb-4"
-            data-aos="zoom-out-left"
-            data-aos-delay="300"
-            style="height: 673.1px"
-          >
-            <div class="card-body text-center">
-              <div class="company-logo mb-3">
-                <img
-                  src="assets/Devzec.png"
-                  alt="Devzec Technologies Logo"
-                  class="logo-img"
-                />
-              </div>
-              <h3 class="card-title">Software Developer Intern</h3>
-              <p class="company text-muted">Devzec Technologies</p>
-              <p class="duration text-primary">July 2023 - January 2024</p>
-              <ul class="experience-details list-unstyled text-start mt-3">
-                <li>
-                  🔹 <strong>Developed a Standalone POS System:</strong> Built a
-                  feature-rich POS application using Windows Forms.
-                </li>
-                <li>
-                  🔹 <strong>Designed Intuitive UI/UX:</strong> Created
-                  wireframe and user-friendly interfaces for a seamless
-                  experience.
-                </li>
-                <li>
-                  🔹 <strong>Optimized Invoice Generation:</strong> Implemented
-                  direct printing methods for faster and more efficient
-                  invoicing.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section
-      id="projects"
-      class="py-5"
-      style="background: linear-gradient(135deg, #f8f9fa, #e9ecef)"
-    >
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Projects</h2>
-          <p class="section-subtitle">My recent works</p>
-        </div>
-        <div class="row mt-4">
-          <!-- Project 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="project-item" data-aos="fade-up" data-aos-delay="100">
-              <img
-                src="assets/Binhub/1.png"
-                alt="BINHUB Waste Disposal Reselling System"
-                class="img-fluid project-image"
-                data-bs-toggle="modal"
-                data-bs-target="#projectModal1"
-                style="
+      <div class="row mt-4">
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/Binhub/1.png" alt="BINHUB Waste Disposal Reselling System" class="img-fluid project-image"
+              data-bs-toggle="modal" data-bs-target="#projectModal1" style="
                   border-radius: 10px;
                   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                "
-              />
-              <div class="mt-3">
-                <h5 class="text-primary">
-                  BINHUB Waste Disposal Reselling System
-                </h5>
-                <p class="text-muted">Technologies: PHP, E-commerce</p>
-                <p>
-                  BINHUB is a waste disposal reselling system that connects
-                  waste producers with waste collectors. It allows users to sell
-                  their waste to collectors and earn money.
-                </p>
-                <a
-                  data-bs-toggle="modal"
-                  data-bs-target="#projectModal1"
-                  class="btn btn-outline-primary mt-2"
-                  >View Project</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="col-md-4 mb-4">
-            <div class="project-item" data-aos="fade-up" data-aos-delay="300">
-              <img
-                src="assets/FuelIn/1.png"
-                alt="Fuel-In Queue Management System"
-                class="img-fluid project-image"
-                data-bs-toggle="modal"
-                data-bs-target="#projectModal2"
-                style="
-                  border-radius: 10px;
-                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                "
-              />
-              <div class="mt-3">
-                <h5 class="text-primary">Fuel-In Queue Management System</h5>
-                <p class="text-muted">Technologies: PHP</p>
-                <p>
-                  Fuel-In is a queue management system that allows users to book
-                  fuel online and avoid long queues at fuel stations. It
-                  provides real-time updates on fuel availability.
-                </p>
-                <a
-                  data-bs-toggle="modal"
-                  data-bs-target="#projectModal2"
-                  class="btn btn-outline-primary mt-2"
-                  >View Project</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="col-md-4 mb-4">
-            <div class="project-item" data-aos="fade-up" data-aos-delay="500">
-              <img
-                src="assets/ECom/1.png"
-                alt="E-COM Web System"
-                class="img-fluid project-image"
-                data-bs-toggle="modal"
-                data-bs-target="#projectModal3"
-                style="
-                  border-radius: 10px;
-                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                "
-              />
-              <div class="mt-3">
-                <h5 class="text-primary">E-COM Web System</h5>
-                <p class="text-muted">Technologies: ASP.Net MVC</p>
-                <p>
-                  E-COM is an e-commerce web system that allows users to buy and
-                  sell products online. It provides a secure payment gateway and
-                  order tracking system.
-                </p>
-                <a
-                  data-bs-toggle="modal"
-                  data-bs-target="#projectModal3"
-                  class="btn btn-outline-primary mt-2"
-                  >View Project</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modal for Project 1 -->
-    <div
-      class="modal fade"
-      id="projectModal1"
-      tabindex="-1"
-      aria-labelledby="projectModalLabel1"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="projectModalLabel1">
-              BINHUB Waste Disposal Reselling System
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div
-              id="carouselProject1"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assets/Binhub/1.png"
-                    class="d-block w-100"
-                    alt="BINHUB Waste Disposal Reselling System Screenshot 1"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/Binhub/2.png"
-                    class="d-block w-100"
-                    alt="BINHUB Waste Disposal Reselling System Screenshot 2"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/Binhub/3.png"
-                    class="d-block w-100"
-                    alt="BINHUB Waste Disposal Reselling System Screenshot 3"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/Binhub/4.png"
-                    class="d-block w-100"
-                    alt="BINHUB Waste Disposal Reselling System Screenshot 4"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/Binhub/5.png"
-                    class="d-block w-100"
-                    alt="BINHUB Waste Disposal Reselling System Screenshot 5"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/Binhub/6.png"
-                    class="d-block w-100"
-                    alt="BINHUB Waste Disposal Reselling System Screenshot 6"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/Binhub/7.png"
-                    class="d-block w-100"
-                    alt="BINHUB Waste Disposal Reselling System Screenshot 7"
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselProject1"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselProject1"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal for Project 2 -->
-    <div
-      class="modal fade"
-      id="projectModal2"
-      tabindex="-1"
-      aria-labelledby="projectModalLabel2"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="projectModalLabel2">
-              Fuel-In Queue Management System
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div
-              id="carouselProject2"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assets/FuelIn/1.png"
-                    class="d-block w-100"
-                    alt="Fuel-In Queue Management System Screenshot 1"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/FuelIn/2.png"
-                    class="d-block w-100"
-                    alt="Fuel-In Queue Management System Screenshot 2"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/FuelIn/3.png"
-                    class="d-block w-100"
-                    alt="Fuel-In Queue Management System Screenshot 3"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/FuelIn/4.png"
-                    class="d-block w-100"
-                    alt="Fuel-In Queue Management System Screenshot 4"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/FuelIn/5.png"
-                    class="d-block w-100"
-                    alt="Fuel-In Queue Management System Screenshot 5"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/FuelIn/6.png"
-                    class="d-block w-100"
-                    alt="Fuel-In Queue Management System Screenshot 6"
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselProject2"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselProject2"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal for Project 3 -->
-    <div
-      class="modal fade"
-      id="projectModal3"
-      tabindex="-1"
-      aria-labelledby="projectModalLabel3"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="projectModalLabel3">
-              E-COM Web System
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div
-              id="carouselProject3"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assets/ECom/1.png"
-                    class="d-block w-100"
-                    alt="E-COM Web System Screenshot 1"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/ECom/2.png"
-                    class="d-block w-100"
-                    alt="E-COM Web System Screenshot 2"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/ECom/3.png"
-                    class="d-block w-100"
-                    alt="E-COM Web System Screenshot 3"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/ECom/4.png"
-                    class="d-block w-100"
-                    alt="E-COM Web System Screenshot 4"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/ECom/5.png"
-                    class="d-block w-100"
-                    alt="E-COM Web System Screenshot 5"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/ECom/6.png"
-                    class="d-block w-100"
-                    alt="E-COM Web System Screenshot 6"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/ECom/7.png"
-                    class="d-block w-100"
-                    alt="E-COM Web System Screenshot 7"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/ECom/8.png"
-                    class="d-block w-100"
-                    alt="E-COM Web System Screenshot 8"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/ECom/9.png"
-                    class="d-block w-100"
-                    alt="E-COM Web System Screenshot 9"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/ECom/10.png"
-                    class="d-block w-100"
-                    alt="E-COM Web System Screenshot 10"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/ECom/11.png"
-                    class="d-block w-100"
-                    alt="E-COM Web System Screenshot 11"
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselProject3"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselProject3"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-      <div class="container">
-        <div class="section-header text-center mb-5">
-          <h2 class="section-title">Education</h2>
-          <p class="section-subtitle">My academic achievements</p>
-        </div>
-        <div
-          class="education-timeline d-flex flex-column flex-md-row justify-content-center"
-        >
-          <!-- Education Item 1 -->
-          <div
-            class="card education-item shadow-sm mb-4"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
-            <div class="card-body text-center">
-              <div class="institution-logo mb-3">
-                <img
-                  src="assets/londonMet.jpg"
-                  alt="London Metropolitan University Logo"
-                  class="logo-img"
-                />
-              </div>
-              <h3 class="card-title">BEng (Hons) in Software Engineering</h3>
-              <p class="institution text-muted">
-                London Metropolitan University
+                " />
+            <div class="mt-3">
+              <h5 class="text-primary">
+                BINHUB Waste Disposal Reselling System
+              </h5>
+              <p class="text-muted">Technologies: PHP, E-commerce</p>
+              <p>
+                BINHUB is a waste disposal reselling system that connects
+                waste producers with waste collectors. It allows users to sell
+                their waste to collectors and earn money.
               </p>
-              <p class="duration text-primary">2023 – 2024</p>
+              <a data-bs-toggle="modal" data-bs-target="#projectModal1" class="btn btn-outline-primary mt-2">View
+                Project</a>
             </div>
           </div>
-          <!-- Education Item 2 -->
-          <div
-            class="card education-item shadow-sm mb-4"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <div class="card-body text-center">
-              <div class="institution-logo mb-3">
-                <img
-                  src="assets/esoft.jpg"
-                  alt="E-soft Metro Campus Logo"
-                  class="logo-img"
-                />
-              </div>
-              <h3 class="card-title">
-                Higher National Diploma in Software Engineering
-              </h3>
-              <p class="institution text-muted">E-soft Metro Campus</p>
-              <p class="duration text-primary">2021 – 2023</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/FuelIn/1.png" alt="Fuel-In Queue Management System" class="img-fluid project-image"
+              data-bs-toggle="modal" data-bs-target="#projectModal2" style="
+                  border-radius: 10px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                " />
+            <div class="mt-3">
+              <h5 class="text-primary">Fuel-In Queue Management System</h5>
+              <p class="text-muted">Technologies: PHP</p>
+              <p>
+                Fuel-In is a queue management system that allows users to book
+                fuel online and avoid long queues at fuel stations. It
+                provides real-time updates on fuel availability.
+              </p>
+              <a data-bs-toggle="modal" data-bs-target="#projectModal2" class="btn btn-outline-primary mt-2">View
+                Project</a>
             </div>
           </div>
-          <!-- Education Item 3 -->
-          <div
-            class="card education-item shadow-sm mb-4"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
-            <div class="card-body text-center">
-              <div class="institution-logo mb-3">
-                <img
-                  src="assets/stc.jpg"
-                  alt="S. Thomas’ College Logo"
-                  class="logo-img"
-                />
-              </div>
-              <h3 class="card-title">Advanced Level (GCE A/L)</h3>
-              <p class="institution text-muted">S. Thomas’ College</p>
-              <p class="duration text-primary">2017 – 2020</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="project-item" data-aos="fade-up" data-aos-delay="500">
+            <img src="assets/ECom/1.png" alt="E-COM Web System" class="img-fluid project-image" data-bs-toggle="modal"
+              data-bs-target="#projectModal3" style="
+                  border-radius: 10px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                " />
+            <div class="mt-3">
+              <h5 class="text-primary">E-COM Web System</h5>
+              <p class="text-muted">Technologies: ASP.Net MVC</p>
+              <p>
+                E-COM is an e-commerce web system that allows users to buy and
+                sell products online. It provides a secure payment gateway and
+                order tracking system.
+              </p>
+              <a data-bs-toggle="modal" data-bs-target="#projectModal3" class="btn btn-outline-primary mt-2">View
+                Project</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section
-      id="contact"
-      class="contact-section py-5"
-      style="
-        background: linear-gradient(135deg, #1c1c1c, #333333);
-        color: #ffffff;
-      "
-    >
-      <div class="container">
-        <div class="section-header text-center">
-          <h2
-            class="section-title fw-bold"
-            style="font-family: 'Poppins', sans-serif; color: #6d28d9"
-          >
-            Get in Touch
-          </h2>
-          <p class="section-subtitle" style="color: #eaeaea">
-            I’d love to hear from you! Whether it’s a project, a question, or
-            just a coffee chat, drop me a line.
-          </p>
+  <!-- Modal for Project 1 -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel1">
+            BINHUB Waste Disposal Reselling System
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="row mt-5 g-4">
-          <!-- Contact Form -->
-          <div class="col-md-6">
-            <div
-              class="card shadow-lg border-0"
-              style="background-color: #292929; border-radius: 15px"
-            >
-              <div class="card-body">
-                <form>
-                  <div class="mb-4">
-                    <label
-                      for="name"
-                      class="form-label fw-semibold"
-                      style="color: #6d28d9"
-                      >Name</label
-                    >
-                    <input
-                      type="text"
-                      id="name"
-                      class="form-control border-0 shadow-sm"
-                      placeholder="Your Name"
-                      required
-                      style="background-color: #3a3a3a; color: #ffffff"
-                    />
-                  </div>
-                  <div class="mb-4">
-                    <label
-                      for="email"
-                      class="form-label fw-semibold"
-                      style="color: #6d28d9"
-                      >Email</label
-                    >
-                    <input
-                      type="email"
-                      id="email"
-                      class="form-control border-0 shadow-sm"
-                      placeholder="Your Email"
-                      required
-                      style="background-color: #3a3a3a; color: #ffffff"
-                    />
-                  </div>
-                  <div class="mb-4">
-                    <label
-                      for="message"
-                      class="form-label fw-semibold"
-                      style="color: #6d28d9"
-                      >Message</label
-                    >
-                    <textarea
-                      id="message"
-                      class="form-control border-0 shadow-sm"
-                      rows="5"
-                      placeholder="Your Message"
-                      required
-                      style="background-color: #3a3a3a; color: #ffffff"
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    class="btn w-100 fw-bold"
-                    style="
-                      background-color: #6d28d9;
-                      color: #292929;
-                      font-size: 1rem;
-                      border-radius: 25px;
-                    "
-                  >
-                    Send Message
-                  </button>
-                </form>
+        <div class="modal-body">
+          <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/Binhub/1.png" class="d-block w-100"
+                  alt="BINHUB Waste Disposal Reselling System Screenshot 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Binhub/2.png" class="d-block w-100"
+                  alt="BINHUB Waste Disposal Reselling System Screenshot 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Binhub/3.png" class="d-block w-100"
+                  alt="BINHUB Waste Disposal Reselling System Screenshot 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Binhub/4.png" class="d-block w-100"
+                  alt="BINHUB Waste Disposal Reselling System Screenshot 4" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Binhub/5.png" class="d-block w-100"
+                  alt="BINHUB Waste Disposal Reselling System Screenshot 5" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Binhub/6.png" class="d-block w-100"
+                  alt="BINHUB Waste Disposal Reselling System Screenshot 6" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Binhub/7.png" class="d-block w-100"
+                  alt="BINHUB Waste Disposal Reselling System Screenshot 7" />
               </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <!-- Contact Information -->
-          <div class="col-md-6">
-            <div
-              class="card shadow-lg border-0"
-              style="background-color: #292929; border-radius: 15px"
-            >
-              <div class="card-body">
-                <h5
-                  class="fw-bold mb-4"
-                  style="font-family: 'Poppins', sans-serif; color: #6d28d9"
-                >
-                  Contact Information
-                </h5>
-                <ul class="list-unstyled">
-                  <li class="mb-4 d-flex align-items-center">
-                    <i
-                      class="fas fa-phone fa-lg me-3"
-                      style="color: #6d28d9"
-                    ></i>
-                    <span>0766449511</span>
-                  </li>
-                  <li class="mb-4 d-flex align-items-center">
-                    <i
-                      class="fas fa-envelope fa-lg me-3"
-                      style="color: #6d28d9"
-                    ></i>
-                    <a
-                      href="mailto:xagihan13@gmail.com"
-                      class="text-white text-decoration-none"
-                      >xagihan13@gmail.com</a
-                    >
-                  </li>
-                  <li class="mb-4 d-flex align-items-center">
-                    <i
-                      class="fas fa-map-marker-alt fa-lg me-3"
-                      style="color: #6d28d9"
-                    ></i>
-                    <span>Archbishop 2nd Lane, Tudella, Ja-Ela</span>
-                  </li>
-                  <li class="mb-4 d-flex align-items-center">
-                    <i
-                      class="fab fa-linkedin fa-lg me-3"
-                      style="color: #6d28d9"
-                    ></i>
-                    <a
-                      href="http://www.linkedin.com/in/AvishkaGihan2001"
-                      target="_blank"
-                      class="text-white text-decoration-none"
-                      >LinkedIn Profile</a
-                    >
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <i
-                      class="fab fa-github fa-lg me-3"
-                      style="color: #6d28d9"
-                    ></i>
-                    <a
-                      href="https://github.com/AvishkaGihan2001"
-                      target="_blank"
-                      class="text-white text-decoration-none"
-                      >GitHub Profile</a
-                    >
-                  </li>
-                </ul>
+  <!-- Modal for Project 2 -->
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel2">
+            Fuel-In Queue Management System
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carouselProject2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/FuelIn/1.png" class="d-block w-100"
+                  alt="Fuel-In Queue Management System Screenshot 1" />
               </div>
+              <div class="carousel-item">
+                <img src="assets/FuelIn/2.png" class="d-block w-100"
+                  alt="Fuel-In Queue Management System Screenshot 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/FuelIn/3.png" class="d-block w-100"
+                  alt="Fuel-In Queue Management System Screenshot 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/FuelIn/4.png" class="d-block w-100"
+                  alt="Fuel-In Queue Management System Screenshot 4" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/FuelIn/5.png" class="d-block w-100"
+                  alt="Fuel-In Queue Management System Screenshot 5" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/FuelIn/6.png" class="d-block w-100"
+                  alt="Fuel-In Queue Management System Screenshot 6" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Project 3 -->
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel3">
+            E-COM Web System
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carouselProject3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/ECom/1.png" class="d-block w-100" alt="E-COM Web System Screenshot 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/ECom/2.png" class="d-block w-100" alt="E-COM Web System Screenshot 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/ECom/3.png" class="d-block w-100" alt="E-COM Web System Screenshot 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/ECom/4.png" class="d-block w-100" alt="E-COM Web System Screenshot 4" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/ECom/5.png" class="d-block w-100" alt="E-COM Web System Screenshot 5" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/ECom/6.png" class="d-block w-100" alt="E-COM Web System Screenshot 6" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/ECom/7.png" class="d-block w-100" alt="E-COM Web System Screenshot 7" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/ECom/8.png" class="d-block w-100" alt="E-COM Web System Screenshot 8" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/ECom/9.png" class="d-block w-100" alt="E-COM Web System Screenshot 9" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/ECom/10.png" class="d-block w-100" alt="E-COM Web System Screenshot 10" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/ECom/11.png" class="d-block w-100" alt="E-COM Web System Screenshot 11" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My academic achievements</p>
+      </div>
+      <div class="education-timeline d-flex flex-column flex-md-row justify-content-center gap-4">
+        <!-- Education Item 1 -->
+        <div class="card education-item shadow-sm mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card-body text-center">
+            <div class="institution-logo mb-3">
+              <img src="assets/londonMet.jpg" alt="London Metropolitan University Logo" class="logo-img" />
+            </div>
+            <h3 class="card-title">BEng (Hons) in Software Engineering</h3>
+            <p class="institution text-muted">
+              London Metropolitan University
+            </p>
+            <p class="duration text-primary">2023 – 2024</p>
+          </div>
+        </div>
+        <!-- Education Item 2 -->
+        <div class="card education-item shadow-sm mb-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card-body text-center">
+            <div class="institution-logo mb-3">
+              <img src="assets/esoft.jpg" alt="E-soft Metro Campus Logo" class="logo-img" />
+            </div>
+            <h3 class="card-title">
+              Higher National Diploma in Software Engineering
+            </h3>
+            <p class="institution text-muted">E-soft Metro Campus</p>
+            <p class="duration text-primary">2021 – 2023</p>
+          </div>
+        </div>
+        <!-- Education Item 3 -->
+        <div class="card education-item shadow-sm mb-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card-body text-center">
+            <div class="institution-logo mb-3">
+              <img src="assets/stc.jpg" alt="S. Thomas’ College Logo" class="logo-img" />
+            </div>
+            <h3 class="card-title">Advanced Level (GCE A/L)</h3>
+            <p class="institution text-muted">S. Thomas’ College</p>
+            <p class="duration text-primary">2017 – 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section py-5">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title fw-bold">
+          Get in Touch
+        </h2>
+        <p class="section-subtitle">
+          I’d love to hear from you! Whether it’s a project, a question, or
+          just a coffee chat, drop me a line.
+        </p>
+      </div>
+      <div class="row mt-5 g-4">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0">
+            <div class="card-body">
+              <form>
+                <div class="mb-4">
+                  <label for="name" class="form-label fw-semibold">Name</label>
+                  <input type="text" id="name" class="form-control border-0 shadow-sm" placeholder="Your Name"
+                    required />
+                </div>
+                <div class="mb-4">
+                  <label for="email" class="form-label fw-semibold">Email</label>
+                  <input type="email" id="email" class="form-control border-0 shadow-sm" placeholder="Your Email"
+                    required />
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="form-label fw-semibold">Message</label>
+                  <textarea id="message" class="form-control border-0 shadow-sm" rows="5" placeholder="Your Message"
+                    required></textarea>
+                </div>
+                <button type="submit" class="btn w-100 fw-bold">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0">
+            <div class="card-body">
+              <h5 class="fw-bold mb-4">
+                Contact Information
+              </h5>
+              <ul class="list-unstyled">
+                <li class="mb-4 d-flex align-items-center">
+                  <i class="fas fa-phone fa-lg me-3"></i>
+                  <span>0766449511</span>
+                </li>
+                <li class="mb-4 d-flex align-items-center">
+                  <i class="fas fa-envelope fa-lg me-3"></i>
+                  <a href="mailto:xagihan13@gmail.com" class="text-white text-decoration-none">xagihan13@gmail.com</a>
+                </li>
+                <li class="mb-4 d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt fa-lg me-3"></i>
+                  <span>Archbishop 2nd Lane, Tudella, Ja-Ela</span>
+                </li>
+                <li class="mb-4 d-flex align-items-center">
+                  <i class="fab fa-linkedin fa-lg me-3"></i>
+                  <a href="http://www.linkedin.com/in/AvishkaGihan2001" target="_blank"
+                    class="text-white text-decoration-none">LinkedIn Profile</a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fab fa-github fa-lg me-3"></i>
+                  <a href="https://github.com/AvishkaGihan2001" target="_blank"
+                    class="text-white text-decoration-none">GitHub Profile</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2025 Avishka Gihan. All Rights Reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2026 Avishka Gihan. All Rights Reserved.</p>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000, // Animation duration in milliseconds
-        easing: "ease-in-out", // Animation easing
-        once: true, // Whether animation should only happen once
-      });
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease-in-out", // Animation easing
+      once: true, // Whether animation should only happen once
+    });
+  </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-    <script>
-      AOS.init({
-        duration: 1000,
-        easing: "ease-in-out",
-        once: true,
-      });
-    </script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  </script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("animate__animated");
-              }
-            });
-          },
-          { threshold: 0.5 }
-        );
-
-        document.querySelectorAll(".skill-card").forEach((card) => {
-          observer.observe(card);
-        });
-      });
-    </script>
-
-    <script>
-      // JavaScript to handle animations
-      document.addEventListener("DOMContentLoaded", () => {
-        const items = document.querySelectorAll(".timeline-item");
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-              }
-            });
-          },
-          { threshold: 0.1 }
-        );
-
-        items.forEach((item, index) => {
-          item.classList.add(
-            index % 2 === 0 ? "fade-in-left" : "fade-in-right"
-          );
-          observer.observe(item);
-        });
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const skillCards = document.querySelectorAll(".skill-card");
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                const animateClass = entry.target.getAttribute("data-animate");
-                entry.target.classList.add("animate__animated", animateClass);
-              }
-            });
-          },
-          { threshold: 0.2 }
-        );
-
-        skillCards.forEach((card) => observer.observe(card));
-      });
-    </script>
-
-    <script>
-      // Add animation when education cards scroll into view
-      document.addEventListener("DOMContentLoaded", function () {
-        const items = document.querySelectorAll(".education-item");
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("animate__fadeInUp");
-              }
-            });
-          },
-          { threshold: 0.1 } // Trigger when 10% of the element is visible
-        );
-
-        items.forEach((item) => observer.observe(item));
-      });
-    </script>
-
-    <script>
-      // Add animation for experience cards
-      document.addEventListener("DOMContentLoaded", function () {
-        const experienceItems = document.querySelectorAll(".experience-item");
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("animate__fadeInUp");
-              }
-            });
-          },
-          { threshold: 0.1 } // Trigger when 10% of the card is visible
-        );
-
-        experienceItems.forEach((item) => observer.observe(item));
-      });
-    </script>
-
-    <script>
-      // Modern scroll reveal for projects and contact cards
-      document.addEventListener("DOMContentLoaded", function () {
-        const projectItems = document.querySelectorAll(".project-item");
-        const contactCards = document.querySelectorAll(
-          ".contact-section .card"
-        );
-
-        const observer = new IntersectionObserver(
-          (entries, obs) => {
-            entries.forEach((entry) => {
-              if (!entry.isIntersecting) return;
-
-              if (entry.target.classList.contains("project-item")) {
-                entry.target.classList.add("visible");
-              }
-
-              if (entry.target.closest(".contact-section")) {
-                entry.target.classList.add("in-view");
-              }
-
-              obs.unobserve(entry.target);
-            });
-          },
-          { threshold: 0.15 }
-        );
-
-        projectItems.forEach((item) => observer.observe(item));
-        contactCards.forEach((card) => observer.observe(card));
-      });
-    </script>
-
-    <script>
-      AOS.init();
-    </script>
-
-    <script>
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate__animated");
+            }
           });
+        },
+        { threshold: 0.5 }
+      );
+
+      document.querySelectorAll(".skill-card").forEach((card) => {
+        observer.observe(card);
+      });
+    });
+  </script>
+
+  <script>
+    // JavaScript to handle animations
+    document.addEventListener("DOMContentLoaded", () => {
+      const items = document.querySelectorAll(".timeline-item");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      items.forEach((item, index) => {
+        item.classList.add(
+          index % 2 === 0 ? "fade-in-left" : "fade-in-right"
+        );
+        observer.observe(item);
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const skillCards = document.querySelectorAll(".skill-card");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const animateClass = entry.target.getAttribute("data-animate");
+              entry.target.classList.add("animate__animated", animateClass);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      skillCards.forEach((card) => observer.observe(card));
+    });
+  </script>
+
+  <script>
+    // Add animation when education cards scroll into view
+    document.addEventListener("DOMContentLoaded", function () {
+      const items = document.querySelectorAll(".education-item");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate__fadeInUp");
+            }
+          });
+        },
+        { threshold: 0.1 } // Trigger when 10% of the element is visible
+      );
+
+      items.forEach((item) => observer.observe(item));
+    });
+  </script>
+
+  <script>
+    // Add animation for experience cards
+    document.addEventListener("DOMContentLoaded", function () {
+      const experienceItems = document.querySelectorAll(".experience-item");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate__fadeInUp");
+            }
+          });
+        },
+        { threshold: 0.1 } // Trigger when 10% of the card is visible
+      );
+
+      experienceItems.forEach((item) => observer.observe(item));
+    });
+  </script>
+
+  <script>
+    // Modern scroll reveal for projects and contact cards
+    document.addEventListener("DOMContentLoaded", function () {
+      const projectItems = document.querySelectorAll(".project-item");
+      const contactCards = document.querySelectorAll(
+        ".contact-section .card"
+      );
+
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            if (entry.target.classList.contains("project-item")) {
+              entry.target.classList.add("visible");
+            }
+
+            if (entry.target.closest(".contact-section")) {
+              entry.target.classList.add("in-view");
+            }
+
+            obs.unobserve(entry.target);
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      projectItems.forEach((item) => observer.observe(item));
+      contactCards.forEach((card) => observer.observe(card));
+    });
+  </script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
         });
       });
-    </script>
+    });
+  </script>
 
-    <script>
-      // Light / Dark mode toggle with persistence
-      (function () {
-        const root = document.documentElement;
-        const toggleBtn = document.getElementById("theme-toggle");
-        const icon = document.getElementById("theme-toggle-icon");
-        const text = document.getElementById("theme-toggle-text");
-        const mobileToggleBtn = document.getElementById("theme-toggle-mobile");
-        const mobileIcon = document.getElementById(
-          "theme-toggle-mobile-icon"
-        );
+  <script>
+    // Light / Dark mode toggle with persistence
+    (function () {
+      const root = document.documentElement;
+      const toggleBtn = document.getElementById("theme-toggle");
+      const icon = document.getElementById("theme-toggle-icon");
+      const text = document.getElementById("theme-toggle-text");
+      const mobileToggleBtn = document.getElementById("theme-toggle-mobile");
+      const mobileIcon = document.getElementById(
+        "theme-toggle-mobile-icon"
+      );
 
-        function applyTheme(theme) {
-          root.setAttribute("data-theme", theme);
-          try {
-            localStorage.setItem("theme", theme);
-          } catch (e) {}
+      function applyTheme(theme) {
+        root.setAttribute("data-theme", theme);
+        try {
+          localStorage.setItem("theme", theme);
+        } catch (e) { }
 
-          if (theme === "dark") {
-            icon.classList.remove("fa-moon");
-            icon.classList.add("fa-sun");
-            text.textContent = "Light";
-            if (mobileIcon) {
-              mobileIcon.classList.remove("fa-moon");
-              mobileIcon.classList.add("fa-sun");
-            }
-          } else {
-            icon.classList.remove("fa-sun");
-            icon.classList.add("fa-moon");
-            text.textContent = "Dark";
-            if (mobileIcon) {
-              mobileIcon.classList.remove("fa-sun");
-              mobileIcon.classList.add("fa-moon");
-            }
+        if (theme === "dark") {
+          icon.classList.remove("fa-moon");
+          icon.classList.add("fa-sun");
+          text.textContent = "Light";
+          if (mobileIcon) {
+            mobileIcon.classList.remove("fa-moon");
+            mobileIcon.classList.add("fa-sun");
+          }
+        } else {
+          icon.classList.remove("fa-sun");
+          icon.classList.add("fa-moon");
+          text.textContent = "Dark";
+          if (mobileIcon) {
+            mobileIcon.classList.remove("fa-sun");
+            mobileIcon.classList.add("fa-moon");
           }
         }
+      }
 
-        const storedTheme = (function () {
-          try {
-            return localStorage.getItem("theme");
-          } catch (e) {
-            return null;
-          }
-        })();
-
-        const prefersDark =
-          window.matchMedia &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-        const initialTheme = storedTheme || (prefersDark ? "dark" : "light");
-        applyTheme(initialTheme);
-
-        if (toggleBtn) {
-          toggleBtn.addEventListener("click", function () {
-            const current = root.getAttribute("data-theme") === "dark";
-            applyTheme(current ? "light" : "dark");
-          });
-        }
-
-        if (mobileToggleBtn) {
-          mobileToggleBtn.addEventListener("click", function () {
-            const current = root.getAttribute("data-theme") === "dark";
-            applyTheme(current ? "light" : "dark");
-          });
+      const storedTheme = (function () {
+        try {
+          return localStorage.getItem("theme");
+        } catch (e) {
+          return null;
         }
       })();
-    </script>
 
-    <!-- Include Particles.js Script -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      const prefersDark =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    <script>
-      particlesJS("particles-js", {
-        particles: {
-          number: {
-            value: window.innerWidth < 768 ? 30 : 80, // Fewer particles on mobile
-            density: {
-              enable: true,
-              value_area: 800,
-            },
-          },
-          // Rest of the configuration...
-        },
-      });
-    </script>
+      const initialTheme = storedTheme || (prefersDark ? "dark" : "light");
+      applyTheme(initialTheme);
 
-    <!-- Initialize Particle Animation -->
-    <script>
-      particlesJS("particles-js", {
-        particles: {
-          number: {
-            value: 80,
-            density: {
-              enable: true,
-              value_area: 800,
-            },
-          },
-          color: {
-            value: "#ffffff",
-          },
-          shape: {
-            type: "circle",
-            stroke: {
-              width: 0,
-              color: "#000000",
-            },
-          },
-          opacity: {
-            value: 0.5,
-            random: false,
-            anim: {
-              enable: false,
-              speed: 1,
-              opacity_min: 0.1,
-              sync: false,
-            },
-          },
-          size: {
-            value: 3,
-            random: true,
-            anim: {
-              enable: false,
-              speed: 40,
-              size_min: 0.1,
-              sync: false,
-            },
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#ffffff",
-            opacity: 0.4,
-            width: 1,
-          },
-          move: {
-            enable: true,
-            speed: 6,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: {
-              enable: false,
-              rotateX: 600,
-              rotateY: 1200,
-            },
-          },
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: {
-              enable: true,
-              mode: "grab",
-            },
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-            resize: true,
-          },
-          modes: {
-            grab: {
-              distance: 140,
-              line_linked: {
-                opacity: 1,
-              },
-            },
-            bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 8,
-              speed: 3,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-            push: {
-              particles_nb: 4,
-            },
-            remove: {
-              particles_nb: 2,
-            },
-          },
-        },
-        retina_detect: true,
-      });
-    </script>
-
-    <script>
-      window.addEventListener("scroll", () => {
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll(".nav-link");
-        let current = "";
-
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          if (pageYOffset >= sectionTop - 60) {
-            current = section.getAttribute("id");
-          }
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function () {
+          const current = root.getAttribute("data-theme") === "dark";
+          applyTheme(current ? "light" : "dark");
         });
-
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href").includes(current)) {
-            link.classList.add("active");
-          }
-        });
-      });
-    </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-10G2JTSGEE"
-    ></script>
-
-    <script>
-      document.addEventListener("scroll", function () {
-        let sections = document.querySelectorAll("section");
-        let navLinks = document.querySelectorAll(".navbar a");
-
-        sections.forEach((section) => {
-          let top = window.scrollY;
-          let offset = section.offsetTop - 50;
-          let height = section.offsetHeight;
-          let id = section.getAttribute("id");
-
-          if (top >= offset && top < offset + height) {
-            navLinks.forEach((link) => {
-              link.classList.remove("active");
-            });
-            document
-              .querySelector(`.navbar a[href="#${id}"]`)
-              .classList.add("active");
-          }
-        });
-      });
-    </script>
-
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
       }
-      gtag("js", new Date());
 
-      gtag("config", "G-10G2JTSGEE");
-    </script>
-  </body>
+      if (mobileToggleBtn) {
+        mobileToggleBtn.addEventListener("click", function () {
+          const current = root.getAttribute("data-theme") === "dark";
+          applyTheme(current ? "light" : "dark");
+        });
+      }
+    })();
+  </script>
+
+  <!-- Include Particles.js Script -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: window.innerWidth < 768 ? 30 : 80, // Fewer particles on mobile
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+        },
+        // Rest of the configuration...
+      },
+    });
+  </script>
+
+  <!-- Initialize Particle Animation -->
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+        },
+        color: {
+          value: "#ffffff",
+        },
+        shape: {
+          type: "circle",
+          stroke: {
+            width: 0,
+            color: "#000000",
+          },
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 40,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200,
+          },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "grab",
+          },
+          onclick: {
+            enable: true,
+            mode: "push",
+          },
+          resize: true,
+        },
+        modes: {
+          grab: {
+            distance: 140,
+            line_linked: {
+              opacity: 1,
+            },
+          },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+          },
+          push: {
+            particles_nb: 4,
+          },
+          remove: {
+            particles_nb: 2,
+          },
+        },
+      },
+      retina_detect: true,
+    });
+  </script>
+
+  <script>
+    window.addEventListener("scroll", () => {
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-link");
+      let current = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 60) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-10G2JTSGEE"></script>
+
+  <script>
+    document.addEventListener("scroll", function () {
+      let sections = document.querySelectorAll("section");
+      let navLinks = document.querySelectorAll(".navbar a");
+
+      sections.forEach((section) => {
+        let top = window.scrollY;
+        let offset = section.offsetTop - 50;
+        let height = section.offsetHeight;
+        let id = section.getAttribute("id");
+
+        if (top >= offset && top < offset + height) {
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+          });
+          document
+            .querySelector(`.navbar a[href="#${id}"]`)
+            .classList.add("active");
+        }
+      });
+    });
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-10G2JTSGEE");
+  </script>
+</body>
+
 </html>
