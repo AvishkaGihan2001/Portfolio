@@ -146,6 +146,57 @@ ul {
   width: 100%;
 }
 
+/* Bottom navbar container */
+.nav-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Scroll wrapper */
+.nav-scroll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: max-content;
+  padding: 8px 10px;
+  gap: 20px;
+}
+
+/* Each nav item */
+.nav-scroll .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  min-width: 60px;
+}
+
+/* Icons */
+.nav-scroll .nav-item i {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+/* Active state */
+.nav-scroll .nav-item.active {
+  color: #00f3ff;
+  /* match your theme */
+}
+
+/* Remove button default styling */
+.theme-toggle-mobile-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  min-width: 60px;
+}
+
+
 /* Theme Toggle Button */
 #theme-toggle {
   border: 1px solid var(--primary);
