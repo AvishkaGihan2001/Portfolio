@@ -19,8 +19,8 @@
   --profile-card-bg: rgba(10, 10, 30, 0.6);
   --navbar-bg: rgba(10, 10, 30, 0.6);
 
-  --font-heading: 'Orbitron', sans-serif;
-  --font-body: 'Rajdhani', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
 
   --transition-fast: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-smooth: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
